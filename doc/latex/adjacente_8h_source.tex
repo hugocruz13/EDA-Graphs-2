@@ -1,0 +1,39 @@
+\doxysection{adjacente.\+h}
+\hypertarget{adjacente_8h_source}{}\label{adjacente_8h_source}\index{C:/Users/hugoc/OneDrive -\/ Instituto Politécnico do Cávado e do Ave/2023\_2024/Estruturas de Dados Avançadas/Dev/TrabII\_ESI\_EDA\_Hugo\_Cruz\_a23010/src/Grafos/adjacente.h@{C:/Users/hugoc/OneDrive -\/ Instituto Politécnico do Cávado e do Ave/2023\_2024/Estruturas de Dados Avançadas/Dev/TrabII\_ESI\_EDA\_Hugo\_Cruz\_a23010/src/Grafos/adjacente.h}}
+\mbox{\hyperlink{adjacente_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ ADJACENTE\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ ADJACENTE\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structAdjacente}{Adjacente}}}
+\DoxyCodeLine{00025\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structAdjacente_a7441ef0865bcb3db9b8064dd7375c1ea}{id}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structAdjacente_a42cd64244a918a5ac7790523e97d1181}{peso}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structAdjacente}{Adjacente}}\ *\mbox{\hyperlink{structAdjacente_a1c15e70c14816623774f270ef4b3e76d}{next}};\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \}\ \mbox{\hyperlink{adjacente_8h_aaf8d838b51951d29be56e29a7721ee83}{Adjacente}};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structAdjacenteFile}{AdjacenteFile}}}
+\DoxyCodeLine{00037\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structAdjacenteFile_a7441ef0865bcb3db9b8064dd7375c1ea}{id}};\ \ \ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structAdjacenteFile_a42cd64244a918a5ac7790523e97d1181}{peso}};\ }
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \}\ \mbox{\hyperlink{adjacente_8h_a7cdb76d5f3b6b51214c422c76c068d58}{AdjacenteFile}};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00050\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{adjacente_8h_ab17c902df2d7d474cf378d19455488db}{ApagarAdjacencia}}(\mbox{\hyperlink{structAdjacente}{Adjacente}}\ *a);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00063\ \mbox{\hyperlink{structAdjacente}{Adjacente}}\ *\mbox{\hyperlink{adjacente_8h_a9504392a1de2ea4cd39ad9e50fa90520}{CriarAdjacencia}}(\textcolor{keywordtype}{int}\ idDestino,\ \textcolor{keywordtype}{int}\ peso,\ \textcolor{keywordtype}{bool}\ *inf);\ \textcolor{comment}{//\ Cria\ uma\ adjcencia}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00077\ \mbox{\hyperlink{structAdjacente}{Adjacente}}\ *\mbox{\hyperlink{adjacente_8h_ac9f85f034b15f7ab6cde59932379c910}{InserirAdjacenciaLista}}(\mbox{\hyperlink{structAdjacente}{Adjacente}}\ *inicio,\ \textcolor{keywordtype}{int}\ idDestino,\ \textcolor{keywordtype}{int}\ peso,\ \textcolor{keywordtype}{bool}\ *inf);\ \textcolor{comment}{//\ Cria\ e\ coloca\ na\ lista\ de\ adjacencias}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00089\ \mbox{\hyperlink{structAdjacente}{Adjacente}}\ *\mbox{\hyperlink{adjacente_8h_ae751763c1bbb374fbc5647904e01c47d}{EliminaUmaAdj}}(\mbox{\hyperlink{structAdjacente}{Adjacente}}\ *inicio,\ \textcolor{keywordtype}{int}\ idDestino,\ \textcolor{keywordtype}{bool}\ *inf);\ \textcolor{comment}{//\ Apaga\ uma\ adjacencia}}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00100\ \mbox{\hyperlink{structAdjacente}{Adjacente}}\ *\mbox{\hyperlink{adjacente_8h_aec581612416f4a61583de30a304bb13a}{ElimanaTodasAdj}}(\mbox{\hyperlink{structAdjacente}{Adjacente}}\ *adj,\ \textcolor{keywordtype}{bool}\ *inf);\ \textcolor{comment}{//\ Apaga\ listas\ de\ adjacencia\ toda}}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

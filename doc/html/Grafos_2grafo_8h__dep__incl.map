@@ -1,0 +1,13 @@
+<map id="C:/Users/hugoc/OneDrive &#45; Instituto Politécnico do Cávado e do Ave/2023_2024/Estruturas de Dados Avançadas/Dev/TrabII_ESI_EDA_Hugo_Cruz_a23010/src/Grafos/grafo.h" name="C:/Users/hugoc/OneDrive &#45; Instituto Politécnico do Cávado e do Ave/2023_2024/Estruturas de Dados Avançadas/Dev/TrabII_ESI_EDA_Hugo_Cruz_a23010/src/Grafos/grafo.h">
+<area shape="rect" id="Node000001" title="Ficheiro de cabeçalho para a estrutura de dados Grafo e funcionalidades." alt="" coords="248,5,530,112"/>
+<area shape="rect" id="Node000002" href="$Grafos_2InputOutput_8h.html" title="Este ficheiro de cabeçalho define as funções para carregar e mostrar dados a partir de ficheiros." alt="" coords="5,160,245,283"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="291,123,226,162,223,157,288,118"/>
+<area shape="rect" id="Node000004" href="$Grafos_2caminhos_8h.html" title="Este arquivo de cabeçalho define as estruturas de dados e as funções para manipular caminhos num graf..." alt="" coords="269,160,509,283"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="392,128,392,160,386,160,386,128"/>
+<area shape="rect" id="Node000006" href="$grafo_8c.html" title="Ficheiro de implementação das funções que manipulam a estrutura de dados Grafo." alt="" coords="533,168,816,275"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="497,118,582,165,579,170,495,122"/>
+<area shape="rect" id="Node000003" href="$InputOutput_8c.html" title="Este ficheiro contém funções para carregar e mostrar dados. As funções de carregamento podem ler dado..." alt="" coords="5,331,245,453"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="128,299,128,330,122,330,122,299"/>
+<area shape="rect" id="Node000005" href="$caminhos_8c.html" title="Este ficheiro contém funções para manipular caminhos num grafo." alt="" coords="269,331,509,453"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="392,299,392,330,386,330,386,299"/>
+</map>

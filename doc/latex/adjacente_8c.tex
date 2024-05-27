@@ -1,0 +1,283 @@
+\doxysection{C\+:/\+Users/hugoc/\+One\+Drive -\/ Instituto Politécnico do Cávado e do Ave/2023\+\_\+2024/\+Estruturas de Dados Avançadas/\+Dev/\+Trab\+II\+\_\+\+ESI\+\_\+\+EDA\+\_\+\+Hugo\+\_\+\+Cruz\+\_\+a23010/src/\+Grafos/adjacente.c File Reference}
+\hypertarget{adjacente_8c}{}\label{adjacente_8c}\index{C:/Users/hugoc/OneDrive -\/ Instituto Politécnico do Cávado e do Ave/2023\_2024/Estruturas de Dados Avançadas/Dev/TrabII\_ESI\_EDA\_Hugo\_Cruz\_a23010/src/Grafos/adjacente.c@{C:/Users/hugoc/OneDrive -\/ Instituto Politécnico do Cávado e do Ave/2023\_2024/Estruturas de Dados Avançadas/Dev/TrabII\_ESI\_EDA\_Hugo\_Cruz\_a23010/src/Grafos/adjacente.c}}
+
+
+Implementação de funções para manipular listas de adjacências.  
+
+
+{\ttfamily \#include "{}adjacente.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{adjacente_8c_ab17c902df2d7d474cf378d19455488db}{Apagar\+Adjacencia}} (\mbox{\hyperlink{structAdjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}a)
+\begin{DoxyCompactList}\small\item\em Liberta a memória alocada para a lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAdjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{adjacente_8c_a9504392a1de2ea4cd39ad9e50fa90520}{Criar\+Adjacencia}} (int id\+Destino, int peso, bool \texorpdfstring{$\ast$}{*}inf)
+\begin{DoxyCompactList}\small\item\em Cria uma nova adjacência. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAdjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{adjacente_8c_ac9f85f034b15f7ab6cde59932379c910}{Inserir\+Adjacencia\+Lista}} (\mbox{\hyperlink{structAdjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}inicio, int id\+Destino, int peso, bool \texorpdfstring{$\ast$}{*}inf)
+\begin{DoxyCompactList}\small\item\em Insere e cria uma nova adjacência e coloca a no final de uma lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAdjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{adjacente_8c_ae751763c1bbb374fbc5647904e01c47d}{Elimina\+Uma\+Adj}} (\mbox{\hyperlink{structAdjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}inicio, int id\+Destino, bool \texorpdfstring{$\ast$}{*}inf)
+\begin{DoxyCompactList}\small\item\em Elimina uma adjacência da lista de adjacências. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAdjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{adjacente_8c_aec581612416f4a61583de30a304bb13a}{Elimana\+Todas\+Adj}} (\mbox{\hyperlink{structAdjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adj, bool \texorpdfstring{$\ast$}{*}inf)
+\begin{DoxyCompactList}\small\item\em Apaga todas as adjacências de uma lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementação de funções para manipular listas de adjacências. 
+
+\begin{DoxyAuthor}{Author}
+Hugo Cruz (a23010) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+93.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/05-\/15
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{adjacente_8c_ab17c902df2d7d474cf378d19455488db}\index{adjacente.c@{adjacente.c}!ApagarAdjacencia@{ApagarAdjacencia}}
+\index{ApagarAdjacencia@{ApagarAdjacencia}!adjacente.c@{adjacente.c}}
+\doxysubsubsection{\texorpdfstring{ApagarAdjacencia()}{ApagarAdjacencia()}}
+{\footnotesize\ttfamily \label{adjacente_8c_ab17c902df2d7d474cf378d19455488db} 
+void Apagar\+Adjacencia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAdjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{a}{}\end{DoxyParamCaption})}
+
+
+
+Liberta a memória alocada para a lista. 
+
+Esta função liberta a memória alocada para a lista de adjacências.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Apontador para a lista a eliminar \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordflow}{if}\ (a\ !=\ NULL)}
+\DoxyCodeLine{00023\ \ \ \ \ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ free(a);\ \textcolor{comment}{//Liberta\ a\ memória\ alocada}}
+\DoxyCodeLine{00025\ \ \ \ \ \}}
+\DoxyCodeLine{00026\ \}}
+
+\end{DoxyCode}
+\Hypertarget{adjacente_8c_a9504392a1de2ea4cd39ad9e50fa90520}\index{adjacente.c@{adjacente.c}!CriarAdjacencia@{CriarAdjacencia}}
+\index{CriarAdjacencia@{CriarAdjacencia}!adjacente.c@{adjacente.c}}
+\doxysubsubsection{\texorpdfstring{CriarAdjacencia()}{CriarAdjacencia()}}
+{\footnotesize\ttfamily \label{adjacente_8c_a9504392a1de2ea4cd39ad9e50fa90520} 
+\mbox{\hyperlink{structAdjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} Criar\+Adjacencia (\begin{DoxyParamCaption}\item[{int}]{id\+Destino}{, }\item[{int}]{peso}{, }\item[{bool \texorpdfstring{$\ast$}{*}}]{inf}{}\end{DoxyParamCaption})}
+
+
+
+Cria uma nova adjacência. 
+
+Esta função cria uma nova adjacência com um identificador de destino e um peso. Também inicializa os apontadores para a proxima adjacência
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Destino} & Identificador do vértice de destino de uma adjacências. \\
+\hline
+{\em peso} & Distância entre adjacências. \\
+\hline
+{\em inf} & Apontador para o estado da funcionalidade. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para uma nova adjacência. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00040\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{structAdjacente}{Adjacente}}*\ aux\ =\ (\mbox{\hyperlink{structAdjacente}{Adjacente}}*)malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structAdjacente}{Adjacente}}));\ \textcolor{comment}{//\ Aloca\ memória\ para\ a\ estrura\ Adjacente}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordflow}{if}\ (aux\ ==\ NULL)\ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ aux-\/>\mbox{\hyperlink{structAdjacente_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}\ =\ idDestino;\ \textcolor{comment}{//Atribui\ valor\ a\ nova\ adjacência}}
+\DoxyCodeLine{00047\ \ \ \ \ aux-\/>\mbox{\hyperlink{structAdjacente_a42cd64244a918a5ac7790523e97d1181}{peso}}\ =\ peso;}
+\DoxyCodeLine{00048\ \ \ \ \ aux-\/>\mbox{\hyperlink{structAdjacente_a0441fada151d7e646765f5743b2d37f3}{next}}\ =\ NULL;\ \textcolor{comment}{//Inicializa\ o\ apontador\ para\ next\ com\ um\ valor\ nulo}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ *inf\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordflow}{return}\ aux;}
+\DoxyCodeLine{00052\ \}}
+
+\end{DoxyCode}
+\Hypertarget{adjacente_8c_aec581612416f4a61583de30a304bb13a}\index{adjacente.c@{adjacente.c}!ElimanaTodasAdj@{ElimanaTodasAdj}}
+\index{ElimanaTodasAdj@{ElimanaTodasAdj}!adjacente.c@{adjacente.c}}
+\doxysubsubsection{\texorpdfstring{ElimanaTodasAdj()}{ElimanaTodasAdj()}}
+{\footnotesize\ttfamily \label{adjacente_8c_aec581612416f4a61583de30a304bb13a} 
+\mbox{\hyperlink{structAdjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} Elimana\+Todas\+Adj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAdjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adj}{, }\item[{bool \texorpdfstring{$\ast$}{*}}]{inf}{}\end{DoxyParamCaption})}
+
+
+
+Apaga todas as adjacências de uma lista. 
+
+Esta função remove todas as adjacências de uma lista.
+
+
+\begin{DoxyParams}{Parameters}
+{\em adj} & Apontador para o início da lista de adjacências. \\
+\hline
+{\em inf} & Apontador para um bool que indica se a execução foi bem sucedida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+NULL após apagar todas as adjacências. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00158\ \{}
+\DoxyCodeLine{00159\ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keywordflow}{if}\ (adj\ ==\ NULL)\ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00163\ \ \ \ \ \mbox{\hyperlink{structAdjacente}{Adjacente}}*\ aux\ =\ adj;}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{comment}{//Corre\ a\ lista\ de\ adjacências\ até\ ao\ fim\ e\ apaga\ todas\ as\ adjacências.}}
+\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keywordflow}{while}\ (aux)}
+\DoxyCodeLine{00167\ \ \ \ \ \{}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (aux)}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ adj\ =\ aux-\/>\mbox{\hyperlink{structAdjacente_a0441fada151d7e646765f5743b2d37f3}{next}};}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{adjacente_8c_ab17c902df2d7d474cf378d19455488db}{ApagarAdjacencia}}(aux);}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ aux\ =\ adj;}
+\DoxyCodeLine{00175\ \ \ \ \ \}}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00177\ \ \ \ \ adj\ =\ NULL;}
+\DoxyCodeLine{00178\ \ \ \ \ *inf\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keywordflow}{return}\ adj;}
+\DoxyCodeLine{00180\ \}}
+
+\end{DoxyCode}
+\Hypertarget{adjacente_8c_ae751763c1bbb374fbc5647904e01c47d}\index{adjacente.c@{adjacente.c}!EliminaUmaAdj@{EliminaUmaAdj}}
+\index{EliminaUmaAdj@{EliminaUmaAdj}!adjacente.c@{adjacente.c}}
+\doxysubsubsection{\texorpdfstring{EliminaUmaAdj()}{EliminaUmaAdj()}}
+{\footnotesize\ttfamily \label{adjacente_8c_ae751763c1bbb374fbc5647904e01c47d} 
+\mbox{\hyperlink{structAdjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} Elimina\+Uma\+Adj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAdjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{inicio}{, }\item[{int}]{id\+Destino}{, }\item[{bool \texorpdfstring{$\ast$}{*}}]{inf}{}\end{DoxyParamCaption})}
+
+
+
+Elimina uma adjacência da lista de adjacências. 
+
+Esta função remove uma adjacência específica da lista de adjacências.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inicio} & Apontador para o início de uma lista de adjacências. \\
+\hline
+{\em id\+Destino} & Identificador do destino da adjacência a eliminar. \\
+\hline
+{\em inf} & Apontador para um bool que indica se a execução foi bem sucedida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o início da lista de adjacências. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00110\ \{}
+\DoxyCodeLine{00111\ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordflow}{if}\ (inicio\ ==\ NULL)}
+\DoxyCodeLine{00114\ \ \ \ \ \{}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00116\ \ \ \ \ \}}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \ \ \ \ \mbox{\hyperlink{structAdjacente}{Adjacente}}*\ aux\ =\ inicio;\textcolor{comment}{//Guarda\ a\ adjacências\ atual\ }}
+\DoxyCodeLine{00119\ \ \ \ \ \mbox{\hyperlink{structAdjacente}{Adjacente}}*\ ant\ =\ NULL;\ \textcolor{comment}{//Guarda\ a\ adjacências\ anterior\ }}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordflow}{while}\ (aux\ \&\&\ aux-\/>\mbox{\hyperlink{structAdjacente_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}\ !=\ idDestino)\ \textcolor{comment}{//\ Anda\ até\ encontar\ o\ destino\ ou\ o\ fim\ da\ lista}}
+\DoxyCodeLine{00122\ \ \ \ \ \{}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ ant\ =\ aux;}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ aux\ =\ aux-\/>\mbox{\hyperlink{structAdjacente_a0441fada151d7e646765f5743b2d37f3}{next}};}
+\DoxyCodeLine{00125\ \ \ \ \ \}}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{comment}{//Não\ encontrou\ o\ vertice\ a\ ser\ removido}}
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordflow}{if}\ (aux\ ==\ NULL)}
+\DoxyCodeLine{00129\ \ \ \ \ \{}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ inicio;}
+\DoxyCodeLine{00132\ \ \ \ \ \}}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordflow}{if}\ (ant\ ==\ NULL)\ \textcolor{comment}{//Insere\ no\ topo\ da\ lista}}
+\DoxyCodeLine{00135\ \ \ \ \ \{}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ inicio\ =\ aux-\/>\mbox{\hyperlink{structAdjacente_a0441fada151d7e646765f5743b2d37f3}{next}};}
+\DoxyCodeLine{00137\ \ \ \ \ \}}
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00139\ \ \ \ \ \{}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ ant-\/>\mbox{\hyperlink{structAdjacente_a0441fada151d7e646765f5743b2d37f3}{next}}\ =\ aux-\/>\mbox{\hyperlink{structAdjacente_a0441fada151d7e646765f5743b2d37f3}{next}};}
+\DoxyCodeLine{00141\ \ \ \ \ \}}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \ \ \ \ \mbox{\hyperlink{adjacente_8c_ab17c902df2d7d474cf378d19455488db}{ApagarAdjacencia}}(aux);}
+\DoxyCodeLine{00144\ \ \ \ \ *inf\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordflow}{return}\ inicio;}
+\DoxyCodeLine{00146\ \}}
+
+\end{DoxyCode}
+\Hypertarget{adjacente_8c_ac9f85f034b15f7ab6cde59932379c910}\index{adjacente.c@{adjacente.c}!InserirAdjacenciaLista@{InserirAdjacenciaLista}}
+\index{InserirAdjacenciaLista@{InserirAdjacenciaLista}!adjacente.c@{adjacente.c}}
+\doxysubsubsection{\texorpdfstring{InserirAdjacenciaLista()}{InserirAdjacenciaLista()}}
+{\footnotesize\ttfamily \label{adjacente_8c_ac9f85f034b15f7ab6cde59932379c910} 
+\mbox{\hyperlink{structAdjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} Inserir\+Adjacencia\+Lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAdjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{inicio}{, }\item[{int}]{id\+Destino}{, }\item[{int}]{peso}{, }\item[{bool \texorpdfstring{$\ast$}{*}}]{inf}{}\end{DoxyParamCaption})}
+
+
+
+Insere e cria uma nova adjacência e coloca a no final de uma lista. 
+
+Esta função cria e insere uma nova adjacência com o identificador do vértice de destino e a distância entre as adjacências no final de uma lista de adjacências.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inicio} & Aponta para o início da lista de adjacências. \\
+\hline
+{\em id\+Destino} & Identificador do vértice de destino da adjacência. \\
+\hline
+{\em peso} & Distância entre as adjacências. \\
+\hline
+{\em inf} & Apontador para o estado da funcionalidade. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aponta para o início da lista de adjacências após a inserção. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00068\ \{}
+\DoxyCodeLine{00069\ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \mbox{\hyperlink{structAdjacente}{Adjacente}}*\ adj\ =\ \mbox{\hyperlink{adjacente_8c_a9504392a1de2ea4cd39ad9e50fa90520}{CriarAdjacencia}}(idDestino,\ peso,\ inf);\ \textcolor{comment}{//Cria\ uma\ adjacências}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordflow}{if}\ (adj\ ==\ NULL)}
+\DoxyCodeLine{00074\ \ \ \ \ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ perror(\textcolor{stringliteral}{"{}CriarAdjacencia"{}});}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00077\ \ \ \ \ \}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordflow}{if}\ (inicio\ ==\ NULL)}
+\DoxyCodeLine{00080\ \ \ \ \ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ inicio\ =\ adj;}
+\DoxyCodeLine{00082\ \ \ \ \ \}}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00084\ \ \ \ \ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structAdjacente}{Adjacente}}*\ aux\ =\ inicio;}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (aux-\/>\mbox{\hyperlink{structAdjacente_a0441fada151d7e646765f5743b2d37f3}{next}}\ !=\ NULL)\ \textcolor{comment}{//Coloca-\/se\ no\ fim\ da\ lista}}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ aux\ =\ aux-\/>\mbox{\hyperlink{structAdjacente_a0441fada151d7e646765f5743b2d37f3}{next}};}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ aux-\/>\mbox{\hyperlink{structAdjacente_a0441fada151d7e646765f5743b2d37f3}{next}}\ =\ adj;\ \textcolor{comment}{//Adiciona\ a\ lista}}
+\DoxyCodeLine{00093\ \ \ \ \ \}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ *inf\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordflow}{return}\ inicio;}
+\DoxyCodeLine{00097\ \}}
+
+\end{DoxyCode}

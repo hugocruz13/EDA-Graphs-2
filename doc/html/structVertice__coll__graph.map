@@ -1,0 +1,7 @@
+<map id="Vertice" name="Vertice">
+<area shape="rect" id="Node000001" title="Estrutura de um vértice num grafo." alt="" coords="14,96,76,123"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="94,100,103,109,94,118,77,120,76,115,92,114,98,109,90,104"/>
+<area shape="rect" id="Node000002" href="$structAdjacente.html" title="Estrutura de uma adjacência num grafo." alt="" coords="5,5,85,32"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="48,48,48,95,42,95,42,48"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="102,10,111,19,103,27,85,30,84,25,101,23,106,19,98,14"/>
+</map>

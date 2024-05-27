@@ -1,0 +1,41 @@
+\doxysection{vertices.\+h}
+\hypertarget{vertices_8h_source}{}\label{vertices_8h_source}\index{C:/Users/hugoc/OneDrive -\/ Instituto Politécnico do Cávado e do Ave/2023\_2024/Estruturas de Dados Avançadas/Dev/TrabII\_ESI\_EDA\_Hugo\_Cruz\_a23010/src/Grafos/vertices.h@{C:/Users/hugoc/OneDrive -\/ Instituto Politécnico do Cávado e do Ave/2023\_2024/Estruturas de Dados Avançadas/Dev/TrabII\_ESI\_EDA\_Hugo\_Cruz\_a23010/src/Grafos/vertices.h}}
+\mbox{\hyperlink{vertices_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ VERTICE\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ VERTICE\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{adjacente_8h}{adjacente.h}}"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structVertice}{Vertice}}}
+\DoxyCodeLine{00025\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structVertice_a7441ef0865bcb3db9b8064dd7375c1ea}{id}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structVertice}{Vertice}}\ *\mbox{\hyperlink{structVertice_a438fdf7499e7c499121730582d95bd00}{nextV}};\ }
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{structAdjacente}{Adjacente}}\ *\mbox{\hyperlink{structVertice_af4e51ee326960e0b9ce1a0f738d56010}{nextA}};\ \ \ \ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \}\ \mbox{\hyperlink{vertices_8h_a901d403606dfb55e6d42b899c05d3347}{Vertice}};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structVerticeFile}{VerticeFile}}}
+\DoxyCodeLine{00037\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structVerticeFile_a7441ef0865bcb3db9b8064dd7375c1ea}{id}};\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \}\ \mbox{\hyperlink{vertices_8h_aa4920a31cf6e48288634414a1998a96f}{VerticeFile}};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00049\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{vertices_8h_a8079b99a16e9a7317c67b888fdc7de37}{ApagarVertice}}(\mbox{\hyperlink{structVertice}{Vertice}}\ *v);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00060\ \mbox{\hyperlink{structVertice}{Vertice}}*\ \mbox{\hyperlink{vertices_8h_ae82149ff71b1e23c597daffdb2f86a73}{CriarVertice}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00071\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{vertices_8h_a79aed65f560e86b0e73054dd2eb0a12a}{ExisteVertice}}(\mbox{\hyperlink{structVertice}{Vertice}}\ *inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00085\ \mbox{\hyperlink{structVertice}{Vertice}}\ *\mbox{\hyperlink{vertices_8h_a348f05f0791acc0c9258006b51d7a5eb}{InserirVerticeLista}}(\mbox{\hyperlink{structVertice}{Vertice}}\ *inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{bool}\ *inf);}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00099\ \mbox{\hyperlink{structVertice}{Vertice}}\ *\mbox{\hyperlink{vertices_8h_a7124c89689a5c26a3bffd300421a3d7f}{ColocaNumaPosicaoLista}}(\mbox{\hyperlink{structVertice}{Vertice}}\ *inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{bool}\ *inf);}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00112\ \mbox{\hyperlink{structVertice}{Vertice}}\ *\mbox{\hyperlink{vertices_8h_aa005270a787e8762a05042e2066d11e2}{EliminarVertice}}(\mbox{\hyperlink{structVertice}{Vertice}}\ *inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{bool}\ *inf);}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00125\ \mbox{\hyperlink{structVertice}{Vertice}}\ *\mbox{\hyperlink{vertices_8h_aff28cdbf110e005743a7073a19c5dcee}{EliminarTodasAdjacenciasVertice}}(\mbox{\hyperlink{structVertice}{Vertice}}\ *inicio,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{bool}\ *inf);}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

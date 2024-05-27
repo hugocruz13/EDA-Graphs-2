@@ -1,0 +1,50 @@
+\doxysection{Input\+Output.\+h}
+\hypertarget{InputOutput_8h_source}{}\label{InputOutput_8h_source}\index{C:/Users/hugoc/OneDrive -\/ Instituto Politécnico do Cávado e do Ave/2023\_2024/Estruturas de Dados Avançadas/Dev/TrabII\_ESI\_EDA\_Hugo\_Cruz\_a23010/src/Grafos/InputOutput.h@{C:/Users/hugoc/OneDrive -\/ Instituto Politécnico do Cávado e do Ave/2023\_2024/Estruturas de Dados Avançadas/Dev/TrabII\_ESI\_EDA\_Hugo\_Cruz\_a23010/src/Grafos/InputOutput.h}}
+\mbox{\hyperlink{InputOutput_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ INPUTOUTPUT\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ INPUTOUTPUT\_H}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <locale.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{grafo_8h}{grafo.h}}"{}}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00027\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{InputOutput_8h_a80fd96971bb5c968895df81d3effea22}{MostraVertice}}(\mbox{\hyperlink{structVertice}{Vertice}}*\ grafo);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00036\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{InputOutput_8h_a3874d0037857c1b7f39a06c1662b859d}{MostraGrafo}}(\mbox{\hyperlink{structGrafo}{Grafo}}*\ g);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00047\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{InputOutput_8h_a93199f676f271c5c783be42fd585cd32}{ReadFile}}(\textcolor{keywordtype}{char}*\ file);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00058\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{InputOutput_8h_ab09dd87f214ae32a6b577d4b9201eb1c}{Contador}}(\textcolor{keywordtype}{char}*\ dados,\ \textcolor{keywordtype}{int}*\ linha,\ \textcolor{keywordtype}{int}*\ coluna);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00069\ \mbox{\hyperlink{structGrafo}{Grafo}}*\ \mbox{\hyperlink{InputOutput_8h_a9191e0b549449ad1fc34089dde824e52}{CriarVerticesCSV}}(\textcolor{keywordtype}{char}*\ dados);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00081\ \mbox{\hyperlink{structGrafo}{Grafo}}*\ \mbox{\hyperlink{InputOutput_8h_a804ce8818f1bef5c93d256ab4dfc2055}{CarregaDadosCSV}}(\textcolor{keywordtype}{char}*\ file);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00092\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{InputOutput_8h_a94905f7515ce0e42d7c84b570a496ba6}{GuardaVertices}}(\mbox{\hyperlink{structGrafo}{Grafo}}*\ g,\ \textcolor{keywordtype}{char}*\ file);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00103\ \mbox{\hyperlink{structGrafo}{Grafo}}*\ \mbox{\hyperlink{InputOutput_8h_a545c84e76e64b64f4cf2da019941c5b1}{CarregaVertices}}(\textcolor{keywordtype}{char}*\ file);}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00115\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{InputOutput_8h_a371a321af75df6c2f8465f7a2faaec3b}{GuardarAdjacentes}}(\mbox{\hyperlink{structGrafo}{Grafo}}*\ g,\ \textcolor{keywordtype}{char}*\ file);}
+\DoxyCodeLine{00126\ \mbox{\hyperlink{structGrafo}{Grafo}}*\ \mbox{\hyperlink{InputOutput_8h_a0fa0dca1288d6a0ebc3710acf9c506d7}{CarregaAdjacencias}}(\mbox{\hyperlink{structGrafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{char}*\ file);}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00139\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{InputOutput_8h_a267174e809bdcfb44d79335509a6156b}{GuardaGrafo}}(\mbox{\hyperlink{structGrafo}{Grafo}}*\ g,\ \textcolor{keywordtype}{char}*\ vertices,\ \textcolor{keywordtype}{char}*\ adjacencias);}
+\DoxyCodeLine{00150\ \mbox{\hyperlink{structGrafo}{Grafo}}*\ \mbox{\hyperlink{InputOutput_8h_ab29d2cda74ebffc79e22ef94d45ea4ec}{CarregaGrafo}}(\textcolor{keywordtype}{char}*\ vertices,\ \textcolor{keywordtype}{char}*\ adjacencias);}
+\DoxyCodeLine{00163\ \mbox{\hyperlink{structGrafo}{Grafo}}*\ \mbox{\hyperlink{InputOutput_8h_a71e58844d42ee4db9e305497e53e9ca7}{CarregaDados}}(\textcolor{keywordtype}{char}*\ file,\ \textcolor{keywordtype}{char}*\ vertices,\ \textcolor{keywordtype}{char}*\ adjacencias);}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00171\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{InputOutput_8h_a016969ee65aba4bfa16453d9a004d6b3}{ImprimirCaminho}}(\textcolor{keywordtype}{int}\ verticeAnt[],\ \textcolor{keywordtype}{int}\ destino);}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00183\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{InputOutput_8h_af65c6ec2cb77db949fdb96a278b2fac1}{MostrarCaminho}}(\mbox{\hyperlink{structGrafo}{Grafo}}*\ g,\ \textcolor{keywordtype}{int}\ origem,\ \textcolor{keywordtype}{int}\ destino);}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00188\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

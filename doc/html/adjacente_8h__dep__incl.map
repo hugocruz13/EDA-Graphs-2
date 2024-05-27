@@ -1,0 +1,21 @@
+<map id="C:/Users/hugoc/OneDrive &#45; Instituto Politécnico do Cávado e do Ave/2023_2024/Estruturas de Dados Avançadas/Dev/TrabII_ESI_EDA_Hugo_Cruz_a23010/src/Grafos/adjacente.h" name="C:/Users/hugoc/OneDrive &#45; Instituto Politécnico do Cávado e do Ave/2023_2024/Estruturas de Dados Avançadas/Dev/TrabII_ESI_EDA_Hugo_Cruz_a23010/src/Grafos/adjacente.h">
+<area shape="rect" id="Node000001" title="Este ficheiro contém as definições das estruturas de dados para as adjacências num grafo." alt="" coords="280,5,519,128"/>
+<area shape="rect" id="Node000002" href="$adjacente_8c.html" title="Implementação de funções para manipular listas de adjacências." alt="" coords="148,176,387,299"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="345,142,317,177,313,174,341,139"/>
+<area shape="rect" id="Node000003" href="$vertices_8h.html" title="Este ficheiro contém as definições das estruturas de dados para os vértices num grafo." alt="" coords="412,176,651,299"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="459,139,486,174,482,177,455,142"/>
+<area shape="rect" id="Node000004" href="$grafo_8h.html" title="Ficheiro de cabeçalho para a estrutura de dados Grafo e funcionalidades." alt="" coords="248,355,530,461"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="472,313,435,356,431,353,468,309"/>
+<area shape="rect" id="Node000010" href="$vertices_8c.html" title="Implementação de funções para manipular vértices." alt="" coords="555,347,794,469"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="595,309,625,344,621,348,591,313"/>
+<area shape="rect" id="Node000005" href="$InputOutput_8h.html" title="Este ficheiro de cabeçalho define as funções para carregar e mostrar dados a partir de ficheiros." alt="" coords="5,517,245,640"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="296,472,222,519,219,515,293,467"/>
+<area shape="rect" id="Node000007" href="$caminhos_8h.html" title="Este arquivo de cabeçalho define as estruturas de dados e as funções para manipular caminhos num graf..." alt="" coords="269,517,509,640"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="392,477,392,517,386,517,386,477"/>
+<area shape="rect" id="Node000009" href="$grafo_8c.html" title="Ficheiro de implementação das funções que manipulam a estrutura de dados Grafo." alt="" coords="533,525,816,632"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="492,467,586,522,584,527,490,472"/>
+<area shape="rect" id="Node000006" href="$InputOutput_8c.html" title="Este ficheiro contém funções para carregar e mostrar dados. As funções de carregamento podem ler dado..." alt="" coords="5,688,245,811"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="128,656,128,687,122,687,122,656"/>
+<area shape="rect" id="Node000008" href="$caminhos_8c.html" title="Este ficheiro contém funções para manipular caminhos num grafo." alt="" coords="269,688,509,811"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="392,656,392,687,386,687,386,656"/>
+</map>

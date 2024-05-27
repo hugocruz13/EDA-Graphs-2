@@ -1,0 +1,405 @@
+\doxysection{C\+:/\+Users/hugoc/\+One\+Drive -\/ Instituto Politécnico do Cávado e do Ave/2023\+\_\+2024/\+Estruturas de Dados Avançadas/\+Dev/\+Trab\+II\+\_\+\+ESI\+\_\+\+EDA\+\_\+\+Hugo\+\_\+\+Cruz\+\_\+a23010/src/\+Grafos/vertices.c File Reference}
+\hypertarget{vertices_8c}{}\label{vertices_8c}\index{C:/Users/hugoc/OneDrive -\/ Instituto Politécnico do Cávado e do Ave/2023\_2024/Estruturas de Dados Avançadas/Dev/TrabII\_ESI\_EDA\_Hugo\_Cruz\_a23010/src/Grafos/vertices.c@{C:/Users/hugoc/OneDrive -\/ Instituto Politécnico do Cávado e do Ave/2023\_2024/Estruturas de Dados Avançadas/Dev/TrabII\_ESI\_EDA\_Hugo\_Cruz\_a23010/src/Grafos/vertices.c}}
+
+
+Implementação de funções para manipular vértices.  
+
+
+{\ttfamily \#include "{}vertices.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{vertices_8c_a8079b99a16e9a7317c67b888fdc7de37}{Apagar\+Vertice}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}v)
+\begin{DoxyCompactList}\small\item\em Liberta a memória alocada para um vértice. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{vertices_8c_ae82149ff71b1e23c597daffdb2f86a73}{Criar\+Vertice}} (int id)
+\begin{DoxyCompactList}\small\item\em Aloca memória para um novo vértice. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{vertices_8c_a79aed65f560e86b0e73054dd2eb0a12a}{Existe\+Vertice}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}inicio, int id)
+\begin{DoxyCompactList}\small\item\em Verifica a existência de um vértice com um determinado identificador. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{vertices_8c_a348f05f0791acc0c9258006b51d7a5eb}{Inserir\+Vertice\+Lista}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}inicio, int id, bool \texorpdfstring{$\ast$}{*}inf)
+\begin{DoxyCompactList}\small\item\em Insere um novo vértice na lista de vértices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{vertices_8c_a7124c89689a5c26a3bffd300421a3d7f}{Coloca\+Numa\+Posicao\+Lista}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}inicio, int id, bool \texorpdfstring{$\ast$}{*}inf)
+\begin{DoxyCompactList}\small\item\em Posiciona a lista no vértice com o identificador fornecido. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{vertices_8c_aa005270a787e8762a05042e2066d11e2}{Eliminar\+Vertice}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}inicio, int id, bool \texorpdfstring{$\ast$}{*}inf)
+\begin{DoxyCompactList}\small\item\em Elimina um vértice da lista de vértices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{vertices_8c_aff28cdbf110e005743a7073a19c5dcee}{Eliminar\+Todas\+Adjacencias\+Vertice}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}inicio, int id, bool \texorpdfstring{$\ast$}{*}inf)
+\begin{DoxyCompactList}\small\item\em Elimina todas as adjacências de um vértice. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementação de funções para manipular vértices. 
+
+\begin{DoxyAuthor}{Author}
+Hugo Cruz (a23010) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+170.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/05-\/23
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{vertices_8c_a8079b99a16e9a7317c67b888fdc7de37}\index{vertices.c@{vertices.c}!ApagarVertice@{ApagarVertice}}
+\index{ApagarVertice@{ApagarVertice}!vertices.c@{vertices.c}}
+\doxysubsubsection{\texorpdfstring{ApagarVertice()}{ApagarVertice()}}
+{\footnotesize\ttfamily \label{vertices_8c_a8079b99a16e9a7317c67b888fdc7de37} 
+void Apagar\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{v}{}\end{DoxyParamCaption})}
+
+
+
+Liberta a memória alocada para um vértice. 
+
+Esta função liberta memória alocada para um vértices
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Apontador para o vértice (\doxylink{structVertice}{Vertice}) a ser liberado. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ free(v);}
+\DoxyCodeLine{00023\ \}}
+
+\end{DoxyCode}
+\Hypertarget{vertices_8c_a7124c89689a5c26a3bffd300421a3d7f}\index{vertices.c@{vertices.c}!ColocaNumaPosicaoLista@{ColocaNumaPosicaoLista}}
+\index{ColocaNumaPosicaoLista@{ColocaNumaPosicaoLista}!vertices.c@{vertices.c}}
+\doxysubsubsection{\texorpdfstring{ColocaNumaPosicaoLista()}{ColocaNumaPosicaoLista()}}
+{\footnotesize\ttfamily \label{vertices_8c_a7124c89689a5c26a3bffd300421a3d7f} 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} Coloca\+Numa\+Posicao\+Lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{inicio}{, }\item[{int}]{id}{, }\item[{bool \texorpdfstring{$\ast$}{*}}]{inf}{}\end{DoxyParamCaption})}
+
+
+
+Posiciona a lista no vértice com o identificador fornecido. 
+
+Esta função posiciona a lista no vértice com o identificador fornecido. Retorna um apontador para o vértice encontrado ou NULL se não for encontrado e atualiza o valor de inf para indicar o sucesso ou falha na operação.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inicio} & Apontador para o início da lista de vértices. \\
+\hline
+{\em id} & Identificador único do vértice a ser encontrado. \\
+\hline
+{\em inf} & Apontador para um booleano que indica o sucesso ou falha na operação. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o vértice encontrado ou NULL se não for encontrado. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00159\ \{}
+\DoxyCodeLine{00160\ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \ \ \ \ \textcolor{keywordflow}{if}\ (inicio\ ==\ NULL)}
+\DoxyCodeLine{00163\ \ \ \ \ \{}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00166\ \ \ \ \ \}}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ aux\ =\ inicio;}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{comment}{//Encontra\ uma\ posição\ e\ retorna\ a\ posição\ atual\ e\ não\ o\ inicio\ da\ lista}}
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keywordflow}{while}\ (aux)}
+\DoxyCodeLine{00172\ \ \ \ \ \{}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (aux-\/>\mbox{\hyperlink{structVertice_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}\ ==\ \textcolor{keywordtype}{id})}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ *inf\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ aux;}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ aux\ =\ aux-\/>\mbox{\hyperlink{structVertice_a04a789b041a0faefae14812d9e9163d0}{nextV}};}
+\DoxyCodeLine{00179\ \ \ \ \ \}}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00181\ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00182\ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00183\ \}}
+
+\end{DoxyCode}
+\Hypertarget{vertices_8c_ae82149ff71b1e23c597daffdb2f86a73}\index{vertices.c@{vertices.c}!CriarVertice@{CriarVertice}}
+\index{CriarVertice@{CriarVertice}!vertices.c@{vertices.c}}
+\doxysubsubsection{\texorpdfstring{CriarVertice()}{CriarVertice()}}
+{\footnotesize\ttfamily \label{vertices_8c_ae82149ff71b1e23c597daffdb2f86a73} 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} Criar\+Vertice (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Aloca memória para um novo vértice. 
+
+Esta função aloca memória para um novo vértice. Retorna um apontador para o vértice criado e atualiza o valor de inf para indicar o sucesso ou falha na criação do vértice.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Aloca memória para um novo vértice. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o vértice criado. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00035\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ aux\ =\ (\mbox{\hyperlink{structVertice}{Vertice}}*)malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structVertice}{Vertice}}));\ \textcolor{comment}{//Aloca\ memória\ para\ uma\ estrutura\ vertice}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordflow}{if}\ (aux\ ==\ NULL)\ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ aux-\/>\mbox{\hyperlink{structVertice_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}\ =\ id;}
+\DoxyCodeLine{00041\ \ \ \ \ aux-\/>\mbox{\hyperlink{structVertice_a04a789b041a0faefae14812d9e9163d0}{nextV}}\ =\ NULL;}
+\DoxyCodeLine{00042\ \ \ \ \ aux-\/>\mbox{\hyperlink{structVertice_a23c955644fa772c43b2766549bf15dae}{nextA}}\ =\ NULL;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordflow}{return}\ aux;}
+\DoxyCodeLine{00045\ \}}
+
+\end{DoxyCode}
+\Hypertarget{vertices_8c_aff28cdbf110e005743a7073a19c5dcee}\index{vertices.c@{vertices.c}!EliminarTodasAdjacenciasVertice@{EliminarTodasAdjacenciasVertice}}
+\index{EliminarTodasAdjacenciasVertice@{EliminarTodasAdjacenciasVertice}!vertices.c@{vertices.c}}
+\doxysubsubsection{\texorpdfstring{EliminarTodasAdjacenciasVertice()}{EliminarTodasAdjacenciasVertice()}}
+{\footnotesize\ttfamily \label{vertices_8c_aff28cdbf110e005743a7073a19c5dcee} 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} Eliminar\+Todas\+Adjacencias\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{inicio}{, }\item[{int}]{id}{, }\item[{bool \texorpdfstring{$\ast$}{*}}]{inf}{}\end{DoxyParamCaption})}
+
+
+
+Elimina todas as adjacências de um vértice. 
+
+sta função elimina todas as adjacências de um vértice. Retorna um apontador para o início da lista de vértices e atualiza o valor de inf para indicar o sucesso ou falha na operação.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inicio} & Apontador para o início da lista de vértices. \\
+\hline
+{\em id} & Identificador único do vértice cujas adjacências serão eliminadas. \\
+\hline
+{\em inf} & Apontador para um booleano que indica o sucesso ou falha na operação. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o início da lista de vértices. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00252\ \{}
+\DoxyCodeLine{00253\ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00254\ }
+\DoxyCodeLine{00255\ \ \ \ \ \textcolor{keywordflow}{if}\ (inicio\ ==\ NULL)}
+\DoxyCodeLine{00256\ \ \ \ \ \{}
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00258\ \ \ \ \ \}}
+\DoxyCodeLine{00259\ }
+\DoxyCodeLine{00260\ \ \ \ \ \textcolor{comment}{//\ Percorre\ todos\ os\ vértices\ da\ lista}}
+\DoxyCodeLine{00261\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ aux\ =\ inicio;}
+\DoxyCodeLine{00262\ }
+\DoxyCodeLine{00263\ \ \ \ \ \textcolor{keywordflow}{while}\ (aux)}
+\DoxyCodeLine{00264\ \ \ \ \ \{}
+\DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Remove\ a\ adjacência\ do\ vértice\ atual}}
+\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ aux-\/>\mbox{\hyperlink{structVertice_a23c955644fa772c43b2766549bf15dae}{nextA}}\ =\ \mbox{\hyperlink{adjacente_8c_ae751763c1bbb374fbc5647904e01c47d}{EliminaUmaAdj}}(aux-\/>\mbox{\hyperlink{structVertice_a23c955644fa772c43b2766549bf15dae}{nextA}},\ \textcolor{keywordtype}{id},\ \&inf);}
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ aux\ =\ aux-\/>\mbox{\hyperlink{structVertice_a04a789b041a0faefae14812d9e9163d0}{nextV}};}
+\DoxyCodeLine{00268\ \ \ \ \ \}}
+\DoxyCodeLine{00269\ }
+\DoxyCodeLine{00270\ \ \ \ \ *inf\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00271\ }
+\DoxyCodeLine{00272\ \ \ \ \ \textcolor{keywordflow}{return}\ inicio;}
+\DoxyCodeLine{00273\ \}}
+
+\end{DoxyCode}
+\Hypertarget{vertices_8c_aa005270a787e8762a05042e2066d11e2}\index{vertices.c@{vertices.c}!EliminarVertice@{EliminarVertice}}
+\index{EliminarVertice@{EliminarVertice}!vertices.c@{vertices.c}}
+\doxysubsubsection{\texorpdfstring{EliminarVertice()}{EliminarVertice()}}
+{\footnotesize\ttfamily \label{vertices_8c_aa005270a787e8762a05042e2066d11e2} 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} Eliminar\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{inicio}{, }\item[{int}]{id}{, }\item[{bool \texorpdfstring{$\ast$}{*}}]{inf}{}\end{DoxyParamCaption})}
+
+
+
+Elimina um vértice da lista de vértices. 
+
+Esta função elimina um vértice da lista de vértices. Retorna um apontador para o início da lista de vértices e atualiza o valor de inf para indicar o sucesso ou falha na operação.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inicio} & Apontador para o início da lista de vértices. \\
+\hline
+{\em id} & Identificador único do vértice a ser eliminado. \\
+\hline
+{\em inf} & Apontador para um booleano que indica o sucesso ou falha na operação. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o início da lista de vértices. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00197\ \{}
+\DoxyCodeLine{00198\ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00199\ }
+\DoxyCodeLine{00200\ \ \ \ \ \textcolor{keywordflow}{if}\ (inicio\ ==\ NULL)}
+\DoxyCodeLine{00201\ \ \ \ \ \{}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00203\ \ \ \ \ \}}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ \ \ \ \ \textcolor{comment}{//Ajuda\ a\ encontar\ a\ posição\ para\ inserir\ o\ vértice}}
+\DoxyCodeLine{00206\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ ant\ =\ NULL;}
+\DoxyCodeLine{00207\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ aux\ =\ inicio;}
+\DoxyCodeLine{00208\ }
+\DoxyCodeLine{00209\ }
+\DoxyCodeLine{00210\ \ \ \ \ \textcolor{keywordflow}{while}\ (aux-\/>\mbox{\hyperlink{structVertice_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}\ !=\ \textcolor{keywordtype}{id})}
+\DoxyCodeLine{00211\ \ \ \ \ \{}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ ant\ =\ aux;}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ aux\ =\ aux-\/>\mbox{\hyperlink{structVertice_a04a789b041a0faefae14812d9e9163d0}{nextV}};}
+\DoxyCodeLine{00214\ \ \ \ \ \}}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00216\ \ \ \ \ \textcolor{keywordflow}{if}\ (!aux)}
+\DoxyCodeLine{00217\ \ \ \ \ \{}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ inicio;}
+\DoxyCodeLine{00219\ \ \ \ \ \}}
+\DoxyCodeLine{00220\ }
+\DoxyCodeLine{00221\ \ \ \ \ \textcolor{comment}{//\ Se\ o\ vértice\ a\ ser\ removido\ é\ o\ primeiro\ da\ lista}}
+\DoxyCodeLine{00222\ \ \ \ \ \textcolor{keywordflow}{if}\ (ant\ ==\ NULL)}
+\DoxyCodeLine{00223\ \ \ \ \ \{}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ aux-\/>\mbox{\hyperlink{structVertice_a23c955644fa772c43b2766549bf15dae}{nextA}}\ =\ \mbox{\hyperlink{adjacente_8c_aec581612416f4a61583de30a304bb13a}{ElimanaTodasAdj}}(aux-\/>\mbox{\hyperlink{structVertice_a23c955644fa772c43b2766549bf15dae}{nextA}},\ \&inf);}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (*inf\ ==\ \textcolor{keyword}{false})\ \textcolor{keywordflow}{return}\ inicio;}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ inicio\ =\ aux-\/>\mbox{\hyperlink{structVertice_a04a789b041a0faefae14812d9e9163d0}{nextV}};}
+\DoxyCodeLine{00227\ \ \ \ \ \}}
+\DoxyCodeLine{00228\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00229\ \ \ \ \ \{}
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Caso\ contrário,\ remove\ o\ vértice\ da\ lista}}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ ant-\/>\mbox{\hyperlink{structVertice_a04a789b041a0faefae14812d9e9163d0}{nextV}}\ =\ aux-\/>\mbox{\hyperlink{structVertice_a04a789b041a0faefae14812d9e9163d0}{nextV}};}
+\DoxyCodeLine{00232\ \ \ \ \ \}}
+\DoxyCodeLine{00233\ }
+\DoxyCodeLine{00234\ \ \ \ \ \textcolor{comment}{//\ Elimina\ todas\ as\ adjacências\ do\ vértice\ e\ apaga\ o\ vértice}}
+\DoxyCodeLine{00235\ \ \ \ \ \mbox{\hyperlink{vertices_8c_a8079b99a16e9a7317c67b888fdc7de37}{ApagarVertice}}(aux);}
+\DoxyCodeLine{00236\ \ \ \ \ *inf\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00237\ \ \ \ \ \textcolor{keywordflow}{return}\ inicio;}
+\DoxyCodeLine{00238\ \}}
+
+\end{DoxyCode}
+\Hypertarget{vertices_8c_a79aed65f560e86b0e73054dd2eb0a12a}\index{vertices.c@{vertices.c}!ExisteVertice@{ExisteVertice}}
+\index{ExisteVertice@{ExisteVertice}!vertices.c@{vertices.c}}
+\doxysubsubsection{\texorpdfstring{ExisteVertice()}{ExisteVertice()}}
+{\footnotesize\ttfamily \label{vertices_8c_a79aed65f560e86b0e73054dd2eb0a12a} 
+bool Existe\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{inicio}{, }\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Verifica a existência de um vértice com um determinado identificador. 
+
+Esta função verifica a existência de um vértice com um determinado identificador na lista de vértices. Retorna verdadeiro se o vértice existir, falso caso contrário.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inicio} & Apontador para o início da lista de vértices. \\
+\hline
+{\em id} & Identificador único do vértice a ser verificado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna verdadeiro se o vértice existir, falso caso contrário. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00057\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ aux\ =\ inicio;}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{comment}{//Corre\ a\ lista\ até\ encontar\ o\ vertice\ procurado}}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordflow}{while}\ (aux)}
+\DoxyCodeLine{00062\ \ \ \ \ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (aux-\/>\mbox{\hyperlink{structVertice_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}\ ==\ \textcolor{keywordtype}{id})}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ aux\ =\ aux-\/>\mbox{\hyperlink{structVertice_a04a789b041a0faefae14812d9e9163d0}{nextV}};}
+\DoxyCodeLine{00069\ \ \ \ \ \}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \}}
+
+\end{DoxyCode}
+\Hypertarget{vertices_8c_a348f05f0791acc0c9258006b51d7a5eb}\index{vertices.c@{vertices.c}!InserirVerticeLista@{InserirVerticeLista}}
+\index{InserirVerticeLista@{InserirVerticeLista}!vertices.c@{vertices.c}}
+\doxysubsubsection{\texorpdfstring{InserirVerticeLista()}{InserirVerticeLista()}}
+{\footnotesize\ttfamily \label{vertices_8c_a348f05f0791acc0c9258006b51d7a5eb} 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} Inserir\+Vertice\+Lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{inicio}{, }\item[{int}]{id}{, }\item[{bool \texorpdfstring{$\ast$}{*}}]{inf}{}\end{DoxyParamCaption})}
+
+
+
+Insere um novo vértice na lista de vértices. 
+
+Esta função cria e insere um novo vértice na lista de vértices. Retorna um apontador para o início da lista de vértices e atualiza o valor de inf para indicar o sucesso ou falha na inserção do vértice.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inicio} & Apontador para o início da lista de vértices. \\
+\hline
+{\em id} & Identificador único do novo vértice. \\
+\hline
+{\em inf} & Apontador para um bool que indica se a execução correu bem. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para um booleano que indica o sucesso ou falha na inserção do vértice. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00088\ \{}
+\DoxyCodeLine{00089\ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ novo\ =\ \mbox{\hyperlink{vertices_8c_ae82149ff71b1e23c597daffdb2f86a73}{CriarVertice}}(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordflow}{if}\ (novo\ ==\ NULL)}
+\DoxyCodeLine{00097\ \ \ \ \ \{}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ inicio;}
+\DoxyCodeLine{00099\ \ \ \ \ \}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{comment}{//Coloca\ o\ novo\ vertice\ no\ inicio\ da\ lista}}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordflow}{if}\ (inicio\ ==\ NULL)}
+\DoxyCodeLine{00103\ \ \ \ \ \{}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ inicio\ =\ novo;}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ *inf\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ inicio;}
+\DoxyCodeLine{00107\ \ \ \ \ \}}
+\DoxyCodeLine{00108\ \ \ \ \ }
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{comment}{//\ Se\ o\ vertice\ já\ existir\ não\ cria\ elimina\ o\ vertice\ criado\ }}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{vertices_8c_a79aed65f560e86b0e73054dd2eb0a12a}{ExisteVertice}}(inicio,\ novo-\/>\mbox{\hyperlink{structVertice_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}))}
+\DoxyCodeLine{00111\ \ \ \ \ \{}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ free(novo);}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ inicio;}
+\DoxyCodeLine{00114\ \ \ \ \ \}}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00116\ \ \ \ \ \{}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Ajuda\ a\ encontar\ a\ posição\ para\ inserir\ o\ vértice}}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ ant\ =\ NULL;}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ aux\ =\ inicio;}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Percorre\ a\ lista\ até\ encontrar\ um\ vértice\ com\ um\ id\ maior\ que\ o\ novo\ vértice}}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (aux\ !=\ NULL\ \&\&\ aux-\/>\mbox{\hyperlink{structVertice_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}\ <\ novo-\/>\mbox{\hyperlink{structVertice_a7441ef0865bcb3db9b8064dd7375c1ea}{id}})}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ ant\ =\ aux;}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ aux\ =\ aux-\/>\mbox{\hyperlink{structVertice_a04a789b041a0faefae14812d9e9163d0}{nextV}};}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Se\ o\ ant\ for\ null\ insere\ no\ início\ da\ lista}}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ant\ ==\ NULL)}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ novo-\/>\mbox{\hyperlink{structVertice_a04a789b041a0faefae14812d9e9163d0}{nextV}}\ =\ inicio;}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ inicio\ =\ novo;}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Caso\ contrário,\ insere\ o\ novo\ vértice\ na\ posição\ correta}}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ novo-\/>\mbox{\hyperlink{structVertice_a04a789b041a0faefae14812d9e9163d0}{nextV}}\ =\ aux;}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ ant-\/>\mbox{\hyperlink{structVertice_a04a789b041a0faefae14812d9e9163d0}{nextV}}\ =\ novo;}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ *inf\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ inicio;}
+\DoxyCodeLine{00143\ \ \ \ \ \}}
+\DoxyCodeLine{00144\ \}}
+
+\end{DoxyCode}

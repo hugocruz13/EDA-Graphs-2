@@ -1,0 +1,24 @@
+<map id="C:/Users/hugoc/OneDrive &#45; Instituto Politécnico do Cávado e do Ave/2023_2024/Estruturas de Dados Avançadas/Dev/TrabII_ESI_EDA_Hugo_Cruz_a23010/src/Main/main.c" name="C:/Users/hugoc/OneDrive &#45; Instituto Politécnico do Cávado e do Ave/2023_2024/Estruturas de Dados Avançadas/Dev/TrabII_ESI_EDA_Hugo_Cruz_a23010/src/Main/main.c">
+<area shape="rect" id="Node000001" title="Arquivo principal do programa." alt="" coords="93,5,365,112"/>
+<area shape="rect" id="Node000002" href="$Main_2libs_2InputOutput_8h.html" title="Este ficheiro de cabeçalho define as funções para carregar e mostrar dados a partir de ficheiros." alt="" coords="97,160,220,187"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,113,177,148,172,145,194,111"/>
+<area shape="rect" id="Node000011" href="$Main_2libs_2caminhos_8h.html" title="Este arquivo de cabeçalho define as estruturas de dados e as funções para manipular caminhos num graf..." alt="" coords="243,160,356,187"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="264,111,286,145,281,148,259,113"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,235,66,261"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="138,190,72,229,69,224,135,185"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="90,235,154,261"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="154,188,138,222,133,219,150,186"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="178,235,245,261"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="170,186,195,221,191,224,165,189"/>
+<area shape="rect" id="Node000006" href="$Main_2libs_2grafo_8h.html" title="Ficheiro de cabeçalho para a estrutura de dados Grafo e funcionalidades." alt="" coords="269,235,330,261"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="184,185,262,225,260,230,182,190"/>
+<area shape="rect" id="Node000007" href="$Main_2libs_2vertices_8h.html" title="Este ficheiro contém as definições das estruturas de dados para os vértices num grafo." alt="" coords="261,309,338,336"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="302,262,302,294,297,294,297,262"/>
+<area shape="rect" id="Node000008" href="$Main_2libs_2adjacente_8h.html" title="Este ficheiro contém as definições das estruturas de dados para as adjacências num grafo." alt="" coords="255,384,344,411"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="302,337,302,368,297,368,297,337"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="216,459,290,485"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="294,413,271,447,267,444,289,410"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="315,459,378,485"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="310,410,332,444,328,447,305,413"/>
+<area shape="poly" id="edge11_Node000011_Node000006" title=" " alt="" coords="302,187,302,219,297,219,297,187"/>
+</map>

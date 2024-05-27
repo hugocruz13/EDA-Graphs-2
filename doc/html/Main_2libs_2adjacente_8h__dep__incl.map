@@ -1,0 +1,14 @@
+<map id="C:/Users/hugoc/OneDrive &#45; Instituto Politécnico do Cávado e do Ave/2023_2024/Estruturas de Dados Avançadas/Dev/TrabII_ESI_EDA_Hugo_Cruz_a23010/src/Main/libs/adjacente.h" name="C:/Users/hugoc/OneDrive &#45; Instituto Politécnico do Cávado e do Ave/2023_2024/Estruturas de Dados Avançadas/Dev/TrabII_ESI_EDA_Hugo_Cruz_a23010/src/Main/libs/adjacente.h">
+<area shape="rect" id="Node000001" title="Este ficheiro contém as definições das estruturas de dados para as adjacências num grafo." alt="" coords="132,5,361,128"/>
+<area shape="rect" id="Node000002" href="$Main_2libs_2vertices_8h.html" title="Este ficheiro contém as definições das estruturas de dados para os vértices num grafo." alt="" coords="132,176,361,299"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="249,144,249,175,244,175,244,144"/>
+<area shape="rect" id="Node000003" href="$Main_2libs_2grafo_8h.html" title="Ficheiro de cabeçalho para a estrutura de dados Grafo e funcionalidades." alt="" coords="132,347,361,469"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="249,315,249,346,244,346,244,315"/>
+<area shape="rect" id="Node000004" href="$Main_2libs_2InputOutput_8h.html" title="Este ficheiro de cabeçalho define as funções para carregar e mostrar dados a partir de ficheiros." alt="" coords="5,517,235,640"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="194,484,168,518,164,515,190,480"/>
+<area shape="rect" id="Node000006" href="$Main_2libs_2caminhos_8h.html" title="Este arquivo de cabeçalho define as estruturas de dados e as funções para manipular caminhos num graf..." alt="" coords="259,517,488,640"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="304,480,330,515,326,518,299,484"/>
+<area shape="rect" id="Node000005" href="$main_8c.html" title="Arquivo principal do programa." alt="" coords="111,688,383,795"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="179,651,207,686,203,689,175,654"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="318,654,290,689,286,686,314,651"/>
+</map>

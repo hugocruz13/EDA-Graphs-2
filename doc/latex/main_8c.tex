@@ -1,0 +1,96 @@
+\doxysection{C\+:/\+Users/hugoc/\+One\+Drive -\/ Instituto Politécnico do Cávado e do Ave/2023\+\_\+2024/\+Estruturas de Dados Avançadas/\+Dev/\+Trab\+II\+\_\+\+ESI\+\_\+\+EDA\+\_\+\+Hugo\+\_\+\+Cruz\+\_\+a23010/src/\+Main/main.c File Reference}
+\hypertarget{main_8c}{}\label{main_8c}\index{C:/Users/hugoc/OneDrive -\/ Instituto Politécnico do Cávado e do Ave/2023\_2024/Estruturas de Dados Avançadas/Dev/TrabII\_ESI\_EDA\_Hugo\_Cruz\_a23010/src/Main/main.c@{C:/Users/hugoc/OneDrive -\/ Instituto Politécnico do Cávado e do Ave/2023\_2024/Estruturas de Dados Avançadas/Dev/TrabII\_ESI\_EDA\_Hugo\_Cruz\_a23010/src/Main/main.c}}
+
+
+Arquivo principal do programa.  
+
+
+{\ttfamily \#include "{}libs/\+Input\+Output.\+h"{}}\newline
+{\ttfamily \#include "{}libs/caminhos.\+h"{}}\newline
+{\ttfamily \#include $<$locale.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Função princial do programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Arquivo principal do programa. 
+
+\begin{DoxyAuthor}{Author}
+Hugo Cruz (a23010) 
+\end{DoxyAuthor}
+Este programa implementa um grafo orientado e pesado onde utiliza listas de adjac{\ucr}ncias e listas de v{\ucr}rtices para cria{\ucr}{\ucr}o do mesmo.
+
+\begin{DoxyVersion}{Version}
+20.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/05-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8c_a0ddf1224851353fc92bfbff6f499fa97}\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8c_a0ddf1224851353fc92bfbff6f499fa97} 
+int main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Função princial do programa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Números de argumentos \\
+\hline
+{\em argv} & Array de strings \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00028\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ setlocale(LC\_ALL,\ \textcolor{stringliteral}{"{}Portugues"{}});\ \textcolor{comment}{//\ Configura\ o\ idioma\ Portugues}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{bool}\ inf;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//Carrega\ dos\ ficheiros\ binário\ (Primeiro\ Grafo)}}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{structGrafo}{Grafo}}*\ g\ =\ \mbox{\hyperlink{InputOutput_8c_a71e58844d42ee4db9e305497e53e9ca7}{CarregaDados}}(argv[1],\ \textcolor{stringliteral}{"{}v1.bin"{}},\ \textcolor{stringliteral}{"{}a1.bin"{}});\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ g\ =\ \mbox{\hyperlink{grafo_8c_aedadb34da858a8042cd06bbdee1eeff0}{InserirVerticeGrafo}}(g,\ 7,\ \&inf);}
+\DoxyCodeLine{00036\ \ \ \ \ g\ =\ \mbox{\hyperlink{grafo_8c_a8b8fc202071f5d2f19e13f6ab582400a}{InserirAdjGrafo}}(g,\ 7,\ 1,\ 54,\ \&inf);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ recebe2\ =\ \mbox{\hyperlink{caminhos_8c_acce91404091fcc4a4881bce773c49374}{ExisteCaminhoGrafo}}(g,\ 3,\ 6);}
+\DoxyCodeLine{00039\ \ \ \ \ g\ =\ \mbox{\hyperlink{grafo_8c_ac47423da8fe6a8401cd7b8fda7284335}{EliminaAdjGrafo}}(g,\ 3,4,\&inf);}
+\DoxyCodeLine{00040\ \ \ \ \ recebe2\ =\ \mbox{\hyperlink{caminhos_8c_acce91404091fcc4a4881bce773c49374}{ExisteCaminhoGrafo}}(g,\ 3,\ 6);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{InputOutput_8c_a3874d0037857c1b7f39a06c1662b859d}{MostraGrafo}}(g);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//GuardaGrafo(g,\ "{}v2.bin"{},\ "{}a2.bin"{});}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{comment}{//Carrga\ dos\ ficheiro\ csv\ (Segundo\ Grafo)}}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{structGrafo}{Grafo}}\ *\ g2\ =\ \mbox{\hyperlink{InputOutput_8c_a71e58844d42ee4db9e305497e53e9ca7}{CarregaDados}}(argv[1],\ \textcolor{stringliteral}{"{}naoexiste.bin"{}},\ \textcolor{stringliteral}{"{}naoexiste.bin"{}});}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{bool}\ recebe\ =\ \mbox{\hyperlink{caminhos_8c_acce91404091fcc4a4881bce773c49374}{ExisteCaminhoGrafo}}(g2,\ 1,\ 3);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ g2\ =\ \mbox{\hyperlink{grafo_8c_a6b3346826db5f632e5094243d02d18ef}{EliminaVerticeGrafo}}(g2,\ 3,\ \&inf);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ recebe\ =\ \mbox{\hyperlink{caminhos_8c_acce91404091fcc4a4881bce773c49374}{ExisteCaminhoGrafo}}(g2,\ 1,\ 3);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{InputOutput_8c_af65c6ec2cb77db949fdb96a278b2fac1}{MostrarCaminho}}(g2,\ 1,\ 4);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{int}\ total\ =\ \mbox{\hyperlink{caminhos_8c_a0674a798da6ed67de009ea11ea80cbe1}{DistanciaMinimaEntreVertices}}(g2,\ 1,\ 4);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{structGrafo}{Grafo}}\ *g3\ =\ \mbox{\hyperlink{caminhos_8c_a1e13beea186e5093f9f1b7e9a177c9d5}{CriarGrafoCaminhoMaisCurto}}(g);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{InputOutput_8c_a3874d0037857c1b7f39a06c1662b859d}{MostraGrafo}}(g3);}
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{grafo_8c_a15b1491f2f9138e548cd9113dbe1e7c8}{ApagaGrafo}}(g2);}
+\DoxyCodeLine{00063\ \ \ \ \ }
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \}}
+
+\end{DoxyCode}

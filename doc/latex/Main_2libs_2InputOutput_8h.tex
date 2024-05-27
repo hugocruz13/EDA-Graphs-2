@@ -1,0 +1,784 @@
+\doxysection{C\+:/\+Users/hugoc/\+One\+Drive -\/ Instituto Politécnico do Cávado e do Ave/2023\+\_\+2024/\+Estruturas de Dados Avançadas/\+Dev/\+Trab\+II\+\_\+\+ESI\+\_\+\+EDA\+\_\+\+Hugo\+\_\+\+Cruz\+\_\+a23010/src/\+Main/libs/\+Input\+Output.h File Reference}
+\hypertarget{Main_2libs_2InputOutput_8h}{}\label{Main_2libs_2InputOutput_8h}\index{C:/Users/hugoc/OneDrive -\/ Instituto Politécnico do Cávado e do Ave/2023\_2024/Estruturas de Dados Avançadas/Dev/TrabII\_ESI\_EDA\_Hugo\_Cruz\_a23010/src/Main/libs/InputOutput.h@{C:/Users/hugoc/OneDrive -\/ Instituto Politécnico do Cávado e do Ave/2023\_2024/Estruturas de Dados Avançadas/Dev/TrabII\_ESI\_EDA\_Hugo\_Cruz\_a23010/src/Main/libs/InputOutput.h}}
+
+
+Este ficheiro de cabeçalho define as funções para carregar e mostrar dados a partir de ficheiros.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$locale.\+h$>$}\newline
+{\ttfamily \#include "{}grafo.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{Main_2libs_2InputOutput_8h_a80fd96971bb5c968895df81d3effea22}{Mostra\+Vertice}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}grafo)
+\begin{DoxyCompactList}\small\item\em Função para mostar vértices as adjacencias. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Main_2libs_2InputOutput_8h_a3874d0037857c1b7f39a06c1662b859d}{Mostra\+Grafo}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g)
+\begin{DoxyCompactList}\small\item\em Função para mostra um grafo. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{Main_2libs_2InputOutput_8h_a93199f676f271c5c783be42fd585cd32}{Read\+File}} (char \texorpdfstring{$\ast$}{*}file)
+\begin{DoxyCompactList}\small\item\em Função para ler um arquivo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Main_2libs_2InputOutput_8h_ab09dd87f214ae32a6b577d4b9201eb1c}{Contador}} (char \texorpdfstring{$\ast$}{*}dados, int \texorpdfstring{$\ast$}{*}linha, int \texorpdfstring{$\ast$}{*}coluna)
+\begin{DoxyCompactList}\small\item\em Função para contar o número de linhas e colunas em uma string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{Main_2libs_2InputOutput_8h_a9191e0b549449ad1fc34089dde824e52}{Criar\+Vertices\+CSV}} (char \texorpdfstring{$\ast$}{*}dados)
+\begin{DoxyCompactList}\small\item\em Função para criar vértices a partir de um arquivo CSV. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{Main_2libs_2InputOutput_8h_a804ce8818f1bef5c93d256ab4dfc2055}{Carrega\+Dados\+CSV}} (char \texorpdfstring{$\ast$}{*}file)
+\begin{DoxyCompactList}\small\item\em Função para carregar dados de um arquivo CSV. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Main_2libs_2InputOutput_8h_a94905f7515ce0e42d7c84b570a496ba6}{Guarda\+Vertices}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, char \texorpdfstring{$\ast$}{*}file)
+\begin{DoxyCompactList}\small\item\em Função para guardar vértices em um ficheiro binário. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{Main_2libs_2InputOutput_8h_a545c84e76e64b64f4cf2da019941c5b1}{Carrega\+Vertices}} (char \texorpdfstring{$\ast$}{*}file)
+\begin{DoxyCompactList}\small\item\em Função para carregar vértices de um arquivo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Main_2libs_2InputOutput_8h_a371a321af75df6c2f8465f7a2faaec3b}{Guardar\+Adjacentes}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, char \texorpdfstring{$\ast$}{*}file)
+\begin{DoxyCompactList}\small\item\em Função para guardar adjacências em um ficheiro binário. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{Main_2libs_2InputOutput_8h_a0fa0dca1288d6a0ebc3710acf9c506d7}{Carrega\+Adjacencias}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, char \texorpdfstring{$\ast$}{*}file)
+\begin{DoxyCompactList}\small\item\em Função para carregar adjacências de um arquivo num grafo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Main_2libs_2InputOutput_8h_a267174e809bdcfb44d79335509a6156b}{Guarda\+Grafo}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, char \texorpdfstring{$\ast$}{*}vertices, char \texorpdfstring{$\ast$}{*}adjacencias)
+\begin{DoxyCompactList}\small\item\em Função para guardar um grafo em dois arquivos, um para vértices e outro para adjacências. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{Main_2libs_2InputOutput_8h_ab29d2cda74ebffc79e22ef94d45ea4ec}{Carrega\+Grafo}} (char \texorpdfstring{$\ast$}{*}vertices, char \texorpdfstring{$\ast$}{*}adjacencias)
+\begin{DoxyCompactList}\small\item\em Função para carregar um grafo a partir de dois arquivos, um para vértices e outro para adjacências. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{Main_2libs_2InputOutput_8h_a71e58844d42ee4db9e305497e53e9ca7}{Carrega\+Dados}} (char \texorpdfstring{$\ast$}{*}file, char \texorpdfstring{$\ast$}{*}vertices, char \texorpdfstring{$\ast$}{*}adjacencias)
+\begin{DoxyCompactList}\small\item\em Função para carregar dados de um arquivo ou de dois arquivos (vértices e adjacências), dependendo do que estiver disponível. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Main_2libs_2InputOutput_8h_a016969ee65aba4bfa16453d9a004d6b3}{Imprimir\+Caminho}} (int vertice\+Ant\mbox{[}$\,$\mbox{]}, int destino)
+\begin{DoxyCompactList}\small\item\em Mostra o caminho de um vértice de origem a um vértice de destino. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Main_2libs_2InputOutput_8h_af65c6ec2cb77db949fdb96a278b2fac1}{Mostrar\+Caminho}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, int origem, int destino)
+\begin{DoxyCompactList}\small\item\em Mostra o caminho mais curto entre dois vértices num grafo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Este ficheiro de cabeçalho define as funções para carregar e mostrar dados a partir de ficheiros. 
+
+\begin{DoxyAuthor}{Author}
+Hugo Cruz (a23010) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+71.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/05-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{Main_2libs_2InputOutput_8h_a0fa0dca1288d6a0ebc3710acf9c506d7}\index{InputOutput.h@{InputOutput.h}!CarregaAdjacencias@{CarregaAdjacencias}}
+\index{CarregaAdjacencias@{CarregaAdjacencias}!InputOutput.h@{InputOutput.h}}
+\doxysubsubsection{\texorpdfstring{CarregaAdjacencias()}{CarregaAdjacencias()}}
+{\footnotesize\ttfamily \label{Main_2libs_2InputOutput_8h_a0fa0dca1288d6a0ebc3710acf9c506d7} 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Carrega\+Adjacencias (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{file}{}\end{DoxyParamCaption})}
+
+
+
+Função para carregar adjacências de um arquivo num grafo. 
+
+Esta função carrega as adjacências de um ficheiro binário para um grafo. Lê o ficheiro e adiciona cada adjacência ao grafo correspondente.
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & Apontador para o grafo onde seram carregado os dados. \\
+\hline
+{\em file} & Nome do arquivo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Grafo\texorpdfstring{$\ast$}{*} Retorna um apontador para o grafo atualizado. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00361\ \{}
+\DoxyCodeLine{00362\ \ \ \ \ \textcolor{keywordtype}{bool}\ inf;}
+\DoxyCodeLine{00363\ \ \ \ \ FILE*\ ficheiro\ =\ fopen(file,\ \textcolor{stringliteral}{"{}rb"{}});}
+\DoxyCodeLine{00364\ \ \ \ \ \textcolor{keywordflow}{if}\ (ficheiro\ ==\ NULL)\ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00365\ }
+\DoxyCodeLine{00366\ \ \ \ \ \mbox{\hyperlink{structAdjacenteFile}{AdjacenteFile}}\ auxAF;}
+\DoxyCodeLine{00367\ }
+\DoxyCodeLine{00368\ \ \ \ \ \textcolor{comment}{//Le\ o\ cabeçalho}}
+\DoxyCodeLine{00369\ \ \ \ \ fread(\&auxAF,\ \textcolor{keyword}{sizeof}(auxAF),\ 1,\ ficheiro)\ ==\ 1;}
+\DoxyCodeLine{00370\ }
+\DoxyCodeLine{00371\ \ \ \ \ \textcolor{comment}{//Se\ for\ o\ ficheiro\ com\ um\ id\ diferente\ de\ -\/8\ não\ le}}
+\DoxyCodeLine{00372\ \ \ \ \ \textcolor{keywordflow}{if}\ (auxAF.\mbox{\hyperlink{structAdjacenteFile_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}\ !=\ -\/8)\ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00373\ }
+\DoxyCodeLine{00374\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ aux\ =\ grafo-\/>\mbox{\hyperlink{structGrafo_a31e63029678ada7e12934b21e59e1d5e}{inicioGrafo}};}
+\DoxyCodeLine{00375\ }
+\DoxyCodeLine{00376\ \ \ \ \ }
+\DoxyCodeLine{00377\ \ \ \ \ \textcolor{keywordflow}{while}\ (aux)}
+\DoxyCodeLine{00378\ \ \ \ \ \{}
+\DoxyCodeLine{00379\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Le\ até\ encontar\ o\ -\/1\ }}
+\DoxyCodeLine{00380\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (fread(\&auxAF,\ \textcolor{keyword}{sizeof}(auxAF),\ 1,\ ficheiro)\ ==\ 1\ \&\&\ auxAF.\mbox{\hyperlink{structAdjacenteFile_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}\ !=\ -\/1)}
+\DoxyCodeLine{00381\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00382\ \ \ \ \ \ \ \ \ \ \ \ \ grafo\ =\ \mbox{\hyperlink{grafo_8c_a8b8fc202071f5d2f19e13f6ab582400a}{InserirAdjGrafo}}(grafo,\ aux-\/>\mbox{\hyperlink{structVertice_a7441ef0865bcb3db9b8064dd7375c1ea}{id}},\ auxAF.\mbox{\hyperlink{structAdjacenteFile_a7441ef0865bcb3db9b8064dd7375c1ea}{id}},\ auxAF.\mbox{\hyperlink{structAdjacenteFile_a42cd64244a918a5ac7790523e97d1181}{peso}},\ \&inf);}
+\DoxyCodeLine{00383\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00384\ \ \ \ \ \ \ \ \ aux\ =\ aux-\/>\mbox{\hyperlink{structVertice_a04a789b041a0faefae14812d9e9163d0}{nextV}};}
+\DoxyCodeLine{00385\ \ \ \ \ \}}
+\DoxyCodeLine{00386\ }
+\DoxyCodeLine{00387\ }
+\DoxyCodeLine{00388\ \ \ \ \ fclose(ficheiro);}
+\DoxyCodeLine{00389\ \ \ \ \ \textcolor{keywordflow}{return}\ grafo;}
+\DoxyCodeLine{00390\ \}}
+
+\end{DoxyCode}
+\Hypertarget{Main_2libs_2InputOutput_8h_a71e58844d42ee4db9e305497e53e9ca7}\index{InputOutput.h@{InputOutput.h}!CarregaDados@{CarregaDados}}
+\index{CarregaDados@{CarregaDados}!InputOutput.h@{InputOutput.h}}
+\doxysubsubsection{\texorpdfstring{CarregaDados()}{CarregaDados()}}
+{\footnotesize\ttfamily \label{Main_2libs_2InputOutput_8h_a71e58844d42ee4db9e305497e53e9ca7} 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Carrega\+Dados (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{file}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{vertices}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{adjacencias}{}\end{DoxyParamCaption})}
+
+
+
+Função para carregar dados de um arquivo ou de dois arquivos (vértices e adjacências), dependendo do que estiver disponível. 
+
+Esta função carrega dados de um arquivo ou de dois arquivos (vértices e adjacências), dependendo do que estiver disponível. Se os ficheiros de vértices e adjacências estiverem disponíveis, usa-\/os para carregar o grafo. Caso contrário, carrega os dados de um ficheiro CSV.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Nome do arquivo com dados (argumento). \\
+\hline
+{\em vertices} & Nome do arquivo para vértices. \\
+\hline
+{\em adjacencias} & Nome do arquivo para vértices. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Grafo\texorpdfstring{$\ast$}{*} Retorna um apontador para o grafo criado. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00440\ \{}
+\DoxyCodeLine{00441\ \ \ \ \ \textcolor{keywordtype}{bool}\ inf;}
+\DoxyCodeLine{00442\ }
+\DoxyCodeLine{00443\ \ \ \ \ \mbox{\hyperlink{structGrafo}{Grafo}}*\ g\ =\ \mbox{\hyperlink{grafo_8c_aee694050fbd7e4d9a8d3057297728415}{CriarGrafo}}(\&inf);}
+\DoxyCodeLine{00444\ }
+\DoxyCodeLine{00445\ \ \ \ \ g\ =\ \mbox{\hyperlink{InputOutput_8c_ab29d2cda74ebffc79e22ef94d45ea4ec}{CarregaGrafo}}(vertices,\ adjacencias);}
+\DoxyCodeLine{00446\ \ \ \ \ }
+\DoxyCodeLine{00447\ \ \ \ \ \textcolor{comment}{//Se\ ocorrer\ algum\ erro\ com\ os\ ficheiros\ le\ o\ csv}}
+\DoxyCodeLine{00448\ \ \ \ \ \textcolor{keywordflow}{if}\ (g\ !=\ NULL)}
+\DoxyCodeLine{00449\ \ \ \ \ \{}
+\DoxyCodeLine{00450\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ g;}
+\DoxyCodeLine{00451\ \ \ \ \ \}}
+\DoxyCodeLine{00452\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00453\ \ \ \ \ \{}
+\DoxyCodeLine{00454\ \ \ \ \ \ \ \ \ g\ =\ \mbox{\hyperlink{InputOutput_8c_a804ce8818f1bef5c93d256ab4dfc2055}{CarregaDadosCSV}}(file);}
+\DoxyCodeLine{00455\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ g;}
+\DoxyCodeLine{00456\ \ \ \ \ \}}
+\DoxyCodeLine{00457\ }
+\DoxyCodeLine{00458\ \}}
+
+\end{DoxyCode}
+\Hypertarget{Main_2libs_2InputOutput_8h_a804ce8818f1bef5c93d256ab4dfc2055}\index{InputOutput.h@{InputOutput.h}!CarregaDadosCSV@{CarregaDadosCSV}}
+\index{CarregaDadosCSV@{CarregaDadosCSV}!InputOutput.h@{InputOutput.h}}
+\doxysubsubsection{\texorpdfstring{CarregaDadosCSV()}{CarregaDadosCSV()}}
+{\footnotesize\ttfamily \label{Main_2libs_2InputOutput_8h_a804ce8818f1bef5c93d256ab4dfc2055} 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Carrega\+Dados\+CSV (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{file}{}\end{DoxyParamCaption})}
+
+
+
+Função para carregar dados de um arquivo CSV. 
+
+Esta função recebe uma string de dados que representa um ficheiro CSV. Cria um grafo e insere vértices no grafo com base nos dados. O número de vértices inseridos é o maior entre o número de linhas e o número de colunas nos dados. Retorna um apontador para o grafo criado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Nome do arquivo CSV (argumento 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Grafo\texorpdfstring{$\ast$}{*} Retorna um apontador para o grafo criado. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00195\ \{}
+\DoxyCodeLine{00196\ \ \ \ \ \textcolor{keywordtype}{bool}\ inf;}
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00198\ \ \ \ \ \textcolor{keywordtype}{int}\ linhas\ =\ 0,\ colunas\ =\ 0;}
+\DoxyCodeLine{00199\ \ \ \ \ \textcolor{keywordtype}{char}*\ saveptr\_linha\ =\ NULL;}
+\DoxyCodeLine{00200\ \ \ \ \ \textcolor{keywordtype}{char}*\ saveptr\_coluna\ =\ NULL;}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00202\ \ \ \ \ \textcolor{keywordtype}{char}*\ dados\ =\ \mbox{\hyperlink{InputOutput_8c_a93199f676f271c5c783be42fd585cd32}{ReadFile}}(file);\ \textcolor{comment}{//Le\ tudo\ do\ ficheiro\ csv}}
+\DoxyCodeLine{00203\ \ \ \ \ \textcolor{keywordtype}{char}*\ dados\_copy\ =\ strdup(dados);\ \textcolor{comment}{//\ Cria\ uma\ c{\ucr}pia\ da\ string\ lida}}
+\DoxyCodeLine{00204\ \ \ \ \ \mbox{\hyperlink{structGrafo}{Grafo}}*\ g\ =\ \mbox{\hyperlink{InputOutput_8c_a9191e0b549449ad1fc34089dde824e52}{CriarVerticesCSV}}(dados\_copy);\ \textcolor{comment}{//\ Conta\ e\ cria\ os\ vertices}}
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{comment}{//Divide\ uma\ string\ em\ tokens\ separados\ por\ \(\backslash\)n}}
+\DoxyCodeLine{00207\ \ \ \ \ dados\ =\ strtok\_s(dados,\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}},\ \&saveptr\_linha);}
+\DoxyCodeLine{00208\ }
+\DoxyCodeLine{00209\ \ \ \ \ \textcolor{keywordflow}{while}\ (dados\ !=\ NULL)}
+\DoxyCodeLine{00210\ \ \ \ \ \{}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ linhas++;}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ dados\ =\ strtok\_s(dados,\ \textcolor{stringliteral}{"{};"{}},\ \&saveptr\_coluna);\ \textcolor{comment}{//Divide\ uma\ string\ em\ tokens\ separados\ por\ ;}}
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (dados\ !=\ NULL)}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ colunas++;}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \ \ \ \ g\ =\ \mbox{\hyperlink{grafo_8c_a8b8fc202071f5d2f19e13f6ab582400a}{InserirAdjGrafo}}(g,\ linhas,\ colunas,\ atoi(dados),\ \&inf);\ \textcolor{comment}{//Tranforma\ uma\ string\ em\ inteiro}}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ dados\ =\ strtok\_s(NULL,\ \textcolor{stringliteral}{"{};"{}},\ \&saveptr\_coluna);\ \textcolor{comment}{//Coloca\ NULL\ e\ avança}}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ colunas\ =\ 0;}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ dados\ =\ strtok\_s(NULL,\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}},\ \&saveptr\_linha);}
+\DoxyCodeLine{00222\ \ \ \ \ \}}
+\DoxyCodeLine{00223\ }
+\DoxyCodeLine{00224\ \ \ \ \ free(dados);}
+\DoxyCodeLine{00225\ \ \ \ \ \textcolor{keywordflow}{return}\ g;}
+\DoxyCodeLine{00226\ }
+\DoxyCodeLine{00227\ \}}
+
+\end{DoxyCode}
+\Hypertarget{Main_2libs_2InputOutput_8h_ab29d2cda74ebffc79e22ef94d45ea4ec}\index{InputOutput.h@{InputOutput.h}!CarregaGrafo@{CarregaGrafo}}
+\index{CarregaGrafo@{CarregaGrafo}!InputOutput.h@{InputOutput.h}}
+\doxysubsubsection{\texorpdfstring{CarregaGrafo()}{CarregaGrafo()}}
+{\footnotesize\ttfamily \label{Main_2libs_2InputOutput_8h_ab29d2cda74ebffc79e22ef94d45ea4ec} 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Carrega\+Grafo (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{vertices}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{adjacencias}{}\end{DoxyParamCaption})}
+
+
+
+Função para carregar um grafo a partir de dois arquivos, um para vértices e outro para adjacências. 
+
+Esta função carrega um grafo inteiro a partir de dois ficheiros, um para os vértices e outro para as adjacências. Usa as funções Carrega\+Vertices e Carrega\+Adjacencias
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Nome do arquivo para vértices. \\
+\hline
+{\em adjacencias} & Nome do arquivo para adjacências. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Grafo\texorpdfstring{$\ast$}{*} Retorna um apontador para o grafo com os valores carregados 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00419\ \{}
+\DoxyCodeLine{00420\ \ \ \ \ \mbox{\hyperlink{structGrafo}{Grafo}}*\ g\ =\ \mbox{\hyperlink{InputOutput_8c_a545c84e76e64b64f4cf2da019941c5b1}{CarregaVertices}}(vertices);}
+\DoxyCodeLine{00421\ \ \ \ \ \textcolor{keywordflow}{if}\ (g\ ==\ NULL)\textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00422\ \ \ \ \ \mbox{\hyperlink{structGrafo}{Grafo}}*\ grafo\ =\ \mbox{\hyperlink{InputOutput_8c_a0fa0dca1288d6a0ebc3710acf9c506d7}{CarregaAdjacencias}}(g,\ adjacencias);}
+\DoxyCodeLine{00423\ }
+\DoxyCodeLine{00424\ \ \ \ \ \textcolor{keywordflow}{return}\ grafo;}
+\DoxyCodeLine{00425\ \}}
+
+\end{DoxyCode}
+\Hypertarget{Main_2libs_2InputOutput_8h_a545c84e76e64b64f4cf2da019941c5b1}\index{InputOutput.h@{InputOutput.h}!CarregaVertices@{CarregaVertices}}
+\index{CarregaVertices@{CarregaVertices}!InputOutput.h@{InputOutput.h}}
+\doxysubsubsection{\texorpdfstring{CarregaVertices()}{CarregaVertices()}}
+{\footnotesize\ttfamily \label{Main_2libs_2InputOutput_8h_a545c84e76e64b64f4cf2da019941c5b1} 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Carrega\+Vertices (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{file}{}\end{DoxyParamCaption})}
+
+
+
+Função para carregar vértices de um arquivo. 
+
+Esta função carrega os vértices de um ficheiro binário para um grafo. Lê o ficheiro e adiciona cada vértice ao grafo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Nome do arquivo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Grafo\texorpdfstring{$\ast$}{*} Retorna um apontador para o grafo criado 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00272\ \{}
+\DoxyCodeLine{00273\ \ \ \ \ \textcolor{keywordtype}{bool}\ inf;}
+\DoxyCodeLine{00274\ \ \ \ \ FILE*\ ficheiro\ =\ fopen(file,\ \textcolor{stringliteral}{"{}rb"{}});}
+\DoxyCodeLine{00275\ }
+\DoxyCodeLine{00276\ \ \ \ \ \textcolor{keywordflow}{if}\ (ficheiro\ ==\ NULL)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00277\ }
+\DoxyCodeLine{00278\ \ \ \ \ \mbox{\hyperlink{structGrafo}{Grafo}}*\ g\ =\ \mbox{\hyperlink{grafo_8c_aee694050fbd7e4d9a8d3057297728415}{CriarGrafo}}(\&inf);\textcolor{comment}{//Cria\ um\ grafo\ }}
+\DoxyCodeLine{00279\ }
+\DoxyCodeLine{00280\ \ \ \ \ \mbox{\hyperlink{structVerticeFile}{VerticeFile}}\ auxVF;}
+\DoxyCodeLine{00281\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ novo\ =\ NULL;}
+\DoxyCodeLine{00282\ }
+\DoxyCodeLine{00283\ \ \ \ \ \textcolor{comment}{//Le\ o\ cabeçalho}}
+\DoxyCodeLine{00284\ \ \ \ \ fread(\&auxVF,\ \textcolor{keyword}{sizeof}(auxVF),\ 1,\ ficheiro)\ ==\ 1;}
+\DoxyCodeLine{00285\ }
+\DoxyCodeLine{00286\ \ \ \ \ \textcolor{comment}{//Se\ for\ o\ ficheiro\ correto\ contínua\ a\ ler\ }}
+\DoxyCodeLine{00287\ \ \ \ \ \textcolor{keywordflow}{if}\ (auxVF.\mbox{\hyperlink{structVerticeFile_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}\ ==\ -\/7)}
+\DoxyCodeLine{00288\ \ \ \ \ \{}
+\DoxyCodeLine{00289\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (fread(\&auxVF,\ \textcolor{keyword}{sizeof}(auxVF),\ 1,\ ficheiro)\ ==\ 1)}
+\DoxyCodeLine{00290\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00291\ \ \ \ \ \ \ \ \ \ \ \ \ g\ =\ \mbox{\hyperlink{grafo_8c_aedadb34da858a8042cd06bbdee1eeff0}{InserirVerticeGrafo}}(g,\ auxVF.\mbox{\hyperlink{structVerticeFile_a7441ef0865bcb3db9b8064dd7375c1ea}{id}},\ \&inf);}
+\DoxyCodeLine{00292\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00293\ \ \ \ \ \}}
+\DoxyCodeLine{00294\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00295\ \ \ \ \ \{}
+\DoxyCodeLine{00296\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00297\ \ \ \ \ \}}
+\DoxyCodeLine{00298\ }
+\DoxyCodeLine{00299\ \ \ \ \ fclose(ficheiro);\textcolor{comment}{//Fecha\ o\ ficheiro\ }}
+\DoxyCodeLine{00300\ \ \ \ \ \textcolor{keywordflow}{return}\ g;}
+\DoxyCodeLine{00301\ \}}
+
+\end{DoxyCode}
+\Hypertarget{Main_2libs_2InputOutput_8h_ab09dd87f214ae32a6b577d4b9201eb1c}\index{InputOutput.h@{InputOutput.h}!Contador@{Contador}}
+\index{Contador@{Contador}!InputOutput.h@{InputOutput.h}}
+\doxysubsubsection{\texorpdfstring{Contador()}{Contador()}}
+{\footnotesize\ttfamily \label{Main_2libs_2InputOutput_8h_ab09dd87f214ae32a6b577d4b9201eb1c} 
+void Contador (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{dados}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{linha}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{coluna}{}\end{DoxyParamCaption})}
+
+
+
+Função para contar o número de linhas e colunas em uma string. 
+
+Esta função recebe uma string de dados e dois apontadores para inteiros. Conta o número de linhas e colunas na string de dados e armazena esses valores nos inteiros apontados pelos apontadores.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dados} & Dados a serem contados. \\
+\hline
+{\em linha} & Apontador para o número de linhas. \\
+\hline
+{\em coluna} & Apontador para o número de colunas. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00103\ \{}
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{char}*\ saveptr\_linha\ =\ NULL;}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{char}*\ saveptr\_coluna\ =\ NULL;}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{int}\ colunasNaLinha\ =\ 0;}
+\DoxyCodeLine{00107\ \ \ \ \ *linha\ =\ 0;}
+\DoxyCodeLine{00108\ \ \ \ \ *coluna\ =\ 0;}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{comment}{//Divide\ uma\ string\ em\ tokens\ separados\ por\ \(\backslash\)n}}
+\DoxyCodeLine{00111\ \ \ \ \ dados\ =\ strtok\_s(dados,\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}},\ \&saveptr\_linha);}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordflow}{while}\ (dados\ !=\ NULL)}
+\DoxyCodeLine{00114\ \ \ \ \ \{}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ (*linha)++;}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Divide\ uma\ string\ em\ tokens\ separados\ por\ ;}}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ dados\ =\ strtok\_s(dados,\ \textcolor{stringliteral}{"{};"{}},\ \&saveptr\_coluna);}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (dados\ !=\ NULL)}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ colunasNaLinha++;}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Coloca\ NULL\ e\ avança}}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ dados\ =\ strtok\_s(NULL,\ \textcolor{stringliteral}{"{};"{}},\ \&saveptr\_coluna);\ }
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Guarda\ o\ número\ maior\ de\ linhas\ contadas}}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (colunasNaLinha\ >\ *coluna)}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ *coluna\ =\ colunasNaLinha;}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ colunasNaLinha\ =\ 0;}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ dados\ =\ strtok\_s(NULL,\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}},\ \&saveptr\_linha);}
+\DoxyCodeLine{00136\ \ \ \ \ \}}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \}}
+
+\end{DoxyCode}
+\Hypertarget{Main_2libs_2InputOutput_8h_a9191e0b549449ad1fc34089dde824e52}\index{InputOutput.h@{InputOutput.h}!CriarVerticesCSV@{CriarVerticesCSV}}
+\index{CriarVerticesCSV@{CriarVerticesCSV}!InputOutput.h@{InputOutput.h}}
+\doxysubsubsection{\texorpdfstring{CriarVerticesCSV()}{CriarVerticesCSV()}}
+{\footnotesize\ttfamily \label{Main_2libs_2InputOutput_8h_a9191e0b549449ad1fc34089dde824e52} 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Criar\+Vertices\+CSV (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{dados}{}\end{DoxyParamCaption})}
+
+
+
+Função para criar vértices a partir de um arquivo CSV. 
+
+Esta função conta as linhas e colunas de um token e cria memória para um grafo. Após a criação do mesmo carrega os vertices de um ficheiro CSV.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dados} & Dados do arquivo CSV. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Grafo\texorpdfstring{$\ast$}{*} Retorna um apontador para o grafo criado. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00150\ \{}
+\DoxyCodeLine{00151\ \ \ \ \ \textcolor{keywordtype}{bool}\ inf;}
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordtype}{int}\ linhas\ =\ 0;}
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{int}\ colunas\ =\ 0;}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{comment}{//Conta\ linhas\ e\ colunas}}
+\DoxyCodeLine{00156\ \ \ \ \ \mbox{\hyperlink{InputOutput_8c_ab09dd87f214ae32a6b577d4b9201eb1c}{Contador}}(dados,\ \&linhas,\ \&colunas);}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ \ \ \ \ \mbox{\hyperlink{structGrafo}{Grafo}}*\ g\ =\ \mbox{\hyperlink{grafo_8c_aee694050fbd7e4d9a8d3057297728415}{CriarGrafo}}(\&inf);}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keywordflow}{if}\ (linhas\ ==\ NULL\ ||\ colunas\ ==\ NULL)\ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{comment}{//Cria\ o\ número\ de\ vertices\ que\ corresponde\ ao\ maior\ valor}}
+\DoxyCodeLine{00162\ \ \ \ \ \textcolor{keywordflow}{if}\ (linhas\ <=\ colunas)}
+\DoxyCodeLine{00163\ \ \ \ \ \{}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 1;\ i\ <=\ colunas;\ i++)}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ g\ =\ \mbox{\hyperlink{grafo_8c_aedadb34da858a8042cd06bbdee1eeff0}{InserirVerticeGrafo}}(g,\ i,\ \&inf);}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00169\ \ \ \ \ \}}
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00171\ \ \ \ \ \{}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 1;\ i\ <=\ linhas;\ i++)}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ g\ =\ \mbox{\hyperlink{grafo_8c_aedadb34da858a8042cd06bbdee1eeff0}{InserirVerticeGrafo}}(g,\ i,\ \&inf);}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00177\ \ \ \ \ \}}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00179\ \ \ \ \ free(dados);}
+\DoxyCodeLine{00180\ \ \ \ \ \textcolor{keywordflow}{return}\ g;}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00182\ \}}
+
+\end{DoxyCode}
+\Hypertarget{Main_2libs_2InputOutput_8h_a267174e809bdcfb44d79335509a6156b}\index{InputOutput.h@{InputOutput.h}!GuardaGrafo@{GuardaGrafo}}
+\index{GuardaGrafo@{GuardaGrafo}!InputOutput.h@{InputOutput.h}}
+\doxysubsubsection{\texorpdfstring{GuardaGrafo()}{GuardaGrafo()}}
+{\footnotesize\ttfamily \label{Main_2libs_2InputOutput_8h_a267174e809bdcfb44d79335509a6156b} 
+void Guarda\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{vertices}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{adjacencias}{}\end{DoxyParamCaption})}
+
+
+
+Função para guardar um grafo em dois arquivos, um para vértices e outro para adjacências. 
+
+Esta função guarda um grafo inteiro em dois ficheiros, um para os vértices e outro para as adjacências. Usa as funções Guarda\+Vertices e Guardar\+Adjacentes
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo a guardar. \\
+\hline
+{\em vertices} & Nome do arquivo para vértices. \\
+\hline
+{\em adjacencias} & Nome do arquivo para adjacências. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00403\ \{}
+\DoxyCodeLine{00404\ \ \ \ \ \mbox{\hyperlink{InputOutput_8c_a94905f7515ce0e42d7c84b570a496ba6}{GuardaVertices}}(g,\ vertices);}
+\DoxyCodeLine{00405\ \ \ \ \ \mbox{\hyperlink{InputOutput_8c_a371a321af75df6c2f8465f7a2faaec3b}{GuardarAdjacentes}}(g,\ adjacencias);}
+\DoxyCodeLine{00406\ \}}
+
+\end{DoxyCode}
+\Hypertarget{Main_2libs_2InputOutput_8h_a371a321af75df6c2f8465f7a2faaec3b}\index{InputOutput.h@{InputOutput.h}!GuardarAdjacentes@{GuardarAdjacentes}}
+\index{GuardarAdjacentes@{GuardarAdjacentes}!InputOutput.h@{InputOutput.h}}
+\doxysubsubsection{\texorpdfstring{GuardarAdjacentes()}{GuardarAdjacentes()}}
+{\footnotesize\ttfamily \label{Main_2libs_2InputOutput_8h_a371a321af75df6c2f8465f7a2faaec3b} 
+void Guardar\+Adjacentes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{file}{}\end{DoxyParamCaption})}
+
+
+
+Função para guardar adjacências em um ficheiro binário. 
+
+Esta função guarda as adjacências de um grafo num ficheiro binário. Percorre todos os vértices e as suas adjacências e escreve-\/os no ficheiro.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo a guardar \\
+\hline
+{\em file} & Nome do arquivo \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00313\ \{}
+\DoxyCodeLine{00314\ \ \ \ \ FILE*\ ficheiro\ =\ fopen(file,\ \textcolor{stringliteral}{"{}wb"{}});}
+\DoxyCodeLine{00315\ }
+\DoxyCodeLine{00316\ \ \ \ \ \textcolor{keywordflow}{if}\ (ficheiro\ ==\ NULL)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00317\ }
+\DoxyCodeLine{00318\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ auxV\ =\ g-\/>\mbox{\hyperlink{structGrafo_a31e63029678ada7e12934b21e59e1d5e}{inicioGrafo}};}
+\DoxyCodeLine{00319\ \ \ \ \ \mbox{\hyperlink{structAdjacenteFile}{AdjacenteFile}}\ auxAF;\ \textcolor{comment}{//\ Estrutura\ sem\ apontadores}}
+\DoxyCodeLine{00320\ }
+\DoxyCodeLine{00321\ \ \ \ \ \textcolor{comment}{//Adicina\ um\ cabeçalho\ para\ garantir\ que\ le\ o\ ficheiro\ correto}}
+\DoxyCodeLine{00322\ \ \ \ \ auxAF.\mbox{\hyperlink{structAdjacenteFile_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}\ =\ -\/8;}
+\DoxyCodeLine{00323\ \ \ \ \ fwrite(\&auxAF,\ \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structAdjacenteFile}{AdjacenteFile}}),\ 1,\ ficheiro);}
+\DoxyCodeLine{00324\ }
+\DoxyCodeLine{00325\ \ \ \ \ \textcolor{comment}{//Avança\ com\ os\ vertices,\ mas\ apenas\ escreve\ as\ adjacências}}
+\DoxyCodeLine{00326\ \ \ \ \ \textcolor{keywordflow}{while}\ (auxV)}
+\DoxyCodeLine{00327\ \ \ \ \ \{}
+\DoxyCodeLine{00328\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structAdjacente}{Adjacente}}*\ auxA\ =\ auxV-\/>\mbox{\hyperlink{structVertice_a23c955644fa772c43b2766549bf15dae}{nextA}};}
+\DoxyCodeLine{00329\ }
+\DoxyCodeLine{00330\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (auxA)}
+\DoxyCodeLine{00331\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00332\ \ \ \ \ \ \ \ \ \ \ \ \ auxAF.\mbox{\hyperlink{structAdjacenteFile_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}\ =\ auxA-\/>\mbox{\hyperlink{structAdjacente_a7441ef0865bcb3db9b8064dd7375c1ea}{id}};}
+\DoxyCodeLine{00333\ \ \ \ \ \ \ \ \ \ \ \ \ auxAF.\mbox{\hyperlink{structAdjacenteFile_a42cd64244a918a5ac7790523e97d1181}{peso}}\ =\ auxA-\/>\mbox{\hyperlink{structAdjacente_a42cd64244a918a5ac7790523e97d1181}{peso}};}
+\DoxyCodeLine{00334\ }
+\DoxyCodeLine{00335\ \ \ \ \ \ \ \ \ \ \ \ \ fwrite(\&auxAF,\ \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structAdjacenteFile}{AdjacenteFile}}),\ 1,\ ficheiro);}
+\DoxyCodeLine{00336\ }
+\DoxyCodeLine{00337\ \ \ \ \ \ \ \ \ \ \ \ \ auxA\ =\ auxA-\/>\mbox{\hyperlink{structAdjacente_a0441fada151d7e646765f5743b2d37f3}{next}};}
+\DoxyCodeLine{00338\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00339\ }
+\DoxyCodeLine{00340\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Marca\ para\ sair\ do\ while\ na\ leitura}}
+\DoxyCodeLine{00341\ \ \ \ \ \ \ \ \ auxAF.\mbox{\hyperlink{structAdjacenteFile_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}\ =\ -\/1;}
+\DoxyCodeLine{00342\ \ \ \ \ \ \ \ \ fwrite(\&auxAF,\ \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structAdjacenteFile}{AdjacenteFile}}),\ 1,\ ficheiro);}
+\DoxyCodeLine{00343\ }
+\DoxyCodeLine{00344\ \ \ \ \ \ \ \ \ auxV\ =\ auxV-\/>\mbox{\hyperlink{structVertice_a04a789b041a0faefae14812d9e9163d0}{nextV}};}
+\DoxyCodeLine{00345\ \ \ \ \ \}}
+\DoxyCodeLine{00346\ }
+\DoxyCodeLine{00347\ \ \ \ \ fclose(ficheiro);}
+\DoxyCodeLine{00348\ \}}
+
+\end{DoxyCode}
+\Hypertarget{Main_2libs_2InputOutput_8h_a94905f7515ce0e42d7c84b570a496ba6}\index{InputOutput.h@{InputOutput.h}!GuardaVertices@{GuardaVertices}}
+\index{GuardaVertices@{GuardaVertices}!InputOutput.h@{InputOutput.h}}
+\doxysubsubsection{\texorpdfstring{GuardaVertices()}{GuardaVertices()}}
+{\footnotesize\ttfamily \label{Main_2libs_2InputOutput_8h_a94905f7515ce0e42d7c84b570a496ba6} 
+void Guarda\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{file}{}\end{DoxyParamCaption})}
+
+
+
+Função para guardar vértices em um ficheiro binário. 
+
+Esta função guarda os vértices de um grafo num ficheiro binário. Percorre todos os vértices do grafo e escreve-\/os no ficheiro.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo a guardar. \\
+\hline
+{\em file} & Nome do arquivo. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00239\ \{}
+\DoxyCodeLine{00240\ \ \ \ \ FILE*\ ficheiro\ =\ fopen(file,\ \textcolor{stringliteral}{"{}wb"{}});}
+\DoxyCodeLine{00241\ }
+\DoxyCodeLine{00242\ \ \ \ \ \textcolor{keywordflow}{if}\ (ficheiro\ ==\ NULL)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00243\ }
+\DoxyCodeLine{00244\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ auxV\ =\ g-\/>\mbox{\hyperlink{structGrafo_a31e63029678ada7e12934b21e59e1d5e}{inicioGrafo}};\ }
+\DoxyCodeLine{00245\ \ \ \ \ \mbox{\hyperlink{structVerticeFile}{VerticeFile}}\ auxVF;\ \textcolor{comment}{//\ Estrutura\ sem\ apontadores}}
+\DoxyCodeLine{00246\ }
+\DoxyCodeLine{00247\ \ \ \ \ \textcolor{comment}{//Adicina\ um\ cabeçalho\ para\ garantir\ que\ le\ o\ ficheiro\ correto}}
+\DoxyCodeLine{00248\ \ \ \ \ auxVF.\mbox{\hyperlink{structVerticeFile_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}\ =\ -\/7;}
+\DoxyCodeLine{00249\ \ \ \ \ fwrite(\&auxVF,\ \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structVerticeFile}{VerticeFile}}),\ 1,\ ficheiro);}
+\DoxyCodeLine{00250\ }
+\DoxyCodeLine{00251\ \ \ \ \ \textcolor{comment}{//Escreve\ todos\ os\ vertices\ em\ modo\ binário}}
+\DoxyCodeLine{00252\ \ \ \ \ \textcolor{keywordflow}{while}\ (auxV)}
+\DoxyCodeLine{00253\ \ \ \ \ \{}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ auxVF.\mbox{\hyperlink{structVerticeFile_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}\ =\ auxV-\/>\mbox{\hyperlink{structVertice_a7441ef0865bcb3db9b8064dd7375c1ea}{id}};}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ fwrite(\&auxVF,\ \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structVerticeFile}{VerticeFile}}),\ 1,\ ficheiro);}
+\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ auxV\ =\ auxV-\/>\mbox{\hyperlink{structVertice_a04a789b041a0faefae14812d9e9163d0}{nextV}};}
+\DoxyCodeLine{00257\ \ \ \ \ \}}
+\DoxyCodeLine{00258\ }
+\DoxyCodeLine{00259\ \ \ \ \ fclose(ficheiro);\ \ \textcolor{comment}{//\ Fecha\ o\ ficheiro\ após\ a\ escrita}}
+\DoxyCodeLine{00260\ \}}
+
+\end{DoxyCode}
+\Hypertarget{Main_2libs_2InputOutput_8h_a016969ee65aba4bfa16453d9a004d6b3}\index{InputOutput.h@{InputOutput.h}!ImprimirCaminho@{ImprimirCaminho}}
+\index{ImprimirCaminho@{ImprimirCaminho}!InputOutput.h@{InputOutput.h}}
+\doxysubsubsection{\texorpdfstring{ImprimirCaminho()}{ImprimirCaminho()}}
+{\footnotesize\ttfamily \label{Main_2libs_2InputOutput_8h_a016969ee65aba4bfa16453d9a004d6b3} 
+void Imprimir\+Caminho (\begin{DoxyParamCaption}\item[{int}]{vertice\+Ant}{\mbox{[}$\,$\mbox{]}, }\item[{int}]{destino}{}\end{DoxyParamCaption})}
+
+
+
+Mostra o caminho de um vértice de origem a um vértice de destino. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Ant} & Array que contém os antecessore de cada vertice \\
+\hline
+{\em destino} & Destino final \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00467\ \{}
+\DoxyCodeLine{00468\ \ \ \ \ \textcolor{keywordtype}{int}\ caminho[\mbox{\hyperlink{Grafos_2grafo_8h_a392fb874e547e582e9c66a08a1f23326}{MAX}}];}
+\DoxyCodeLine{00469\ \ \ \ \ \textcolor{keywordtype}{int}\ contador\ =\ 0;}
+\DoxyCodeLine{00470\ \ \ \ \ \textcolor{keywordtype}{int}\ atual\ =\ destino;}
+\DoxyCodeLine{00471\ }
+\DoxyCodeLine{00472\ \ \ \ \ \ \textcolor{comment}{//\ Coloca\ num\ arrays\ todos\ os\ anteriores\ a\ cada\ vertice}}
+\DoxyCodeLine{00473\ \ \ \ \ \textcolor{keywordflow}{while}\ (atual\ !=\ -\/1)}
+\DoxyCodeLine{00474\ \ \ \ \ \{}
+\DoxyCodeLine{00475\ \ \ \ \ \ \ \ \ caminho[contador++]\ =\ atual;}
+\DoxyCodeLine{00476\ \ \ \ \ \ \ \ \ atual\ =\ verticeAnt[atual];}
+\DoxyCodeLine{00477\ \ \ \ \ \}}
+\DoxyCodeLine{00478\ }
+\DoxyCodeLine{00479\ \ \ \ \ \textcolor{comment}{//\ Imprime\ o\ caminho\ do\ vértice\ de\ origem\ ao\ vértice\ de\ destino}}
+\DoxyCodeLine{00480\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ contador\ -\/\ 1;\ i\ >=\ 0;\ i-\/-\/)}
+\DoxyCodeLine{00481\ \ \ \ \ \{}
+\DoxyCodeLine{00482\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\%d\ "{}},\ caminho[i]);}
+\DoxyCodeLine{00483\ \ \ \ \ \}}
+\DoxyCodeLine{00484\ \}}
+
+\end{DoxyCode}
+\Hypertarget{Main_2libs_2InputOutput_8h_a3874d0037857c1b7f39a06c1662b859d}\index{InputOutput.h@{InputOutput.h}!MostraGrafo@{MostraGrafo}}
+\index{MostraGrafo@{MostraGrafo}!InputOutput.h@{InputOutput.h}}
+\doxysubsubsection{\texorpdfstring{MostraGrafo()}{MostraGrafo()}}
+{\footnotesize\ttfamily \label{Main_2libs_2InputOutput_8h_a3874d0037857c1b7f39a06c1662b859d} 
+void Mostra\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g}{}\end{DoxyParamCaption})}
+
+
+
+Função para mostra um grafo. 
+
+Esta função recebe um apontador para um grafo e imprime o grafo chamando a função Mostra\+Vertice para o vértice inicial do grafo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo a ser mostrado \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00054\ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{InputOutput_8c_a80fd96971bb5c968895df81d3effea22}{MostraVertice}}(g-\/>\mbox{\hyperlink{structGrafo_a31e63029678ada7e12934b21e59e1d5e}{inicioGrafo}});}
+\DoxyCodeLine{00056\ \}}
+
+\end{DoxyCode}
+\Hypertarget{Main_2libs_2InputOutput_8h_af65c6ec2cb77db949fdb96a278b2fac1}\index{InputOutput.h@{InputOutput.h}!MostrarCaminho@{MostrarCaminho}}
+\index{MostrarCaminho@{MostrarCaminho}!InputOutput.h@{InputOutput.h}}
+\doxysubsubsection{\texorpdfstring{MostrarCaminho()}{MostrarCaminho()}}
+{\footnotesize\ttfamily \label{Main_2libs_2InputOutput_8h_af65c6ec2cb77db949fdb96a278b2fac1} 
+void Mostrar\+Caminho (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{int}]{origem}{, }\item[{int}]{destino}{}\end{DoxyParamCaption})}
+
+
+
+Mostra o caminho mais curto entre dois vértices num grafo. 
+
+Esta função recebe um grafo, um vértice de origem e um vértice de destino. Ela utiliza o algoritmo de Dijkstra para calcular o caminho mais curto do vértice de origem ao vértice de destino e imprime esse caminho.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & O grafo. \\
+\hline
+{\em origem} & O vértice de origem. \\
+\hline
+{\em destino} & O vértice de destino. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00497\ \{}
+\DoxyCodeLine{00498\ \ \ \ \ \textcolor{keywordflow}{if}\ (g\ ==\ NULL)}
+\DoxyCodeLine{00499\ \ \ \ \ \{}
+\DoxyCodeLine{00500\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00501\ \ \ \ \ \}}
+\DoxyCodeLine{00502\ }
+\DoxyCodeLine{00503\ \ \ \ \ \textcolor{keywordtype}{int}\ distanciasFinais[\mbox{\hyperlink{Grafos_2grafo_8h_a392fb874e547e582e9c66a08a1f23326}{MAX}}];}
+\DoxyCodeLine{00504\ \ \ \ \ \textcolor{keywordtype}{int}\ verticeAnt[\mbox{\hyperlink{Grafos_2grafo_8h_a392fb874e547e582e9c66a08a1f23326}{MAX}}];}
+\DoxyCodeLine{00505\ }
+\DoxyCodeLine{00506\ \ \ \ \ \textcolor{comment}{//\ Inicializa\ o\ array\ de\ vértices\ anteriores}}
+\DoxyCodeLine{00507\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ \mbox{\hyperlink{Grafos_2grafo_8h_a392fb874e547e582e9c66a08a1f23326}{MAX}};\ i++)}
+\DoxyCodeLine{00508\ \ \ \ \ \{}
+\DoxyCodeLine{00509\ \ \ \ \ \ \ \ \ verticeAnt[i]\ =\ -\/1;}
+\DoxyCodeLine{00510\ \ \ \ \ \}}
+\DoxyCodeLine{00511\ }
+\DoxyCodeLine{00512\ \ \ \ \ \textcolor{comment}{//\ Inicializa\ o\ array\ de\ vértices\ anteriores}}
+\DoxyCodeLine{00513\ \ \ \ \ \mbox{\hyperlink{caminhos_8c_aed2f18906f7c32b0f64046f296774de6}{InicializarArrays}}(distanciasFinais);}
+\DoxyCodeLine{00514\ }
+\DoxyCodeLine{00515\ \ \ \ \ \mbox{\hyperlink{caminhos_8c_a7ca9da3193e0376b2266f8bedecebf09}{Dijkstra}}(g,\ origem,\ distanciasFinais,\ verticeAnt);}
+\DoxyCodeLine{00516\ }
+\DoxyCodeLine{00517\ \ \ \ \ \textcolor{keywordflow}{if}\ (distanciasFinais[destino]\ ==\ INT\_MAX)}
+\DoxyCodeLine{00518\ \ \ \ \ \{}
+\DoxyCodeLine{00519\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Nao\ existe\ caminho\ de\ \%d\ para\ \%d\(\backslash\)n"{}},\ origem,\ destino);}
+\DoxyCodeLine{00520\ \ \ \ \ \}}
+\DoxyCodeLine{00521\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00522\ \ \ \ \ \{}
+\DoxyCodeLine{00523\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Caminho\ de\ \%d\ para\ \%d:\ "{}},\ origem,\ destino);}
+\DoxyCodeLine{00524\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{InputOutput_8c_a016969ee65aba4bfa16453d9a004d6b3}{ImprimirCaminho}}(verticeAnt,\ destino);}
+\DoxyCodeLine{00525\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)nDistancia:\ \%d\(\backslash\)n"{}},\ distanciasFinais[destino]);}
+\DoxyCodeLine{00526\ \ \ \ \ \}}
+\DoxyCodeLine{00527\ \}}
+
+\end{DoxyCode}
+\Hypertarget{Main_2libs_2InputOutput_8h_a80fd96971bb5c968895df81d3effea22}\index{InputOutput.h@{InputOutput.h}!MostraVertice@{MostraVertice}}
+\index{MostraVertice@{MostraVertice}!InputOutput.h@{InputOutput.h}}
+\doxysubsubsection{\texorpdfstring{MostraVertice()}{MostraVertice()}}
+{\footnotesize\ttfamily \label{Main_2libs_2InputOutput_8h_a80fd96971bb5c968895df81d3effea22} 
+void Mostra\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{grafo}{}\end{DoxyParamCaption})}
+
+
+
+Função para mostar vértices as adjacencias. 
+
+Esta função recebe um apontador para um vértice e imprime o vértice e as suas adjacências. Percorre a lista de vértices e para cada vértice, percorre a lista de adjacências, imprimindo as.
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & Apontador para o vértice a ser mostrado.\\
+\hline
+\end{DoxyParams}
+Função para mostar vértices as adjacencias.
+
+Esta função recebe um apontador para um vértice e imprime o vértice e as suas adjacências. Percorre a lista de vértices e para cada vértice, percorre a lista de adjacências, imprimindo as.
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & Apontador para o vértice a ser mostrado. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ aux\ =\ grafo;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//Avança\ na\ lista\ de\ vertices\ e\ arestas\ e\ mostra\ todos\ os\ pesos\ das\ adjacência}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordflow}{while}\ (aux\ !=\ NULL)}
+\DoxyCodeLine{00026\ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)nVertice:\ \%d\(\backslash\)n\(\backslash\)n"{}},\ aux-\/>\mbox{\hyperlink{structVertice_a7441ef0865bcb3db9b8064dd7375c1ea}{id}});}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structAdjacente}{Adjacente}}*\ adj\ =\ aux-\/>\mbox{\hyperlink{structVertice_a23c955644fa772c43b2766549bf15dae}{nextA}};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (adj)}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (adj-\/>\mbox{\hyperlink{structAdjacente_a42cd64244a918a5ac7790523e97d1181}{peso}}\ >\ 0\ \&\&\ adj-\/>\mbox{\hyperlink{structAdjacente_a42cd64244a918a5ac7790523e97d1181}{peso}}\ !=\ INT\_MAX)}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)tAdj:\ \%d\ -\/\ (\%d)\(\backslash\)n"{}},\ adj-\/>\mbox{\hyperlink{structAdjacente_a7441ef0865bcb3db9b8064dd7375c1ea}{id}},\ adj-\/>\mbox{\hyperlink{structAdjacente_a42cd64244a918a5ac7790523e97d1181}{peso}});}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ adj\ =\ adj-\/>\mbox{\hyperlink{structAdjacente_a0441fada151d7e646765f5743b2d37f3}{next}};}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ aux\ =\ aux-\/>\mbox{\hyperlink{structVertice_a04a789b041a0faefae14812d9e9163d0}{nextV}};}
+\DoxyCodeLine{00042\ \ \ \ \ \}}
+\DoxyCodeLine{00043\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{00044\ \}}
+
+\end{DoxyCode}
+\Hypertarget{Main_2libs_2InputOutput_8h_a93199f676f271c5c783be42fd585cd32}\index{InputOutput.h@{InputOutput.h}!ReadFile@{ReadFile}}
+\index{ReadFile@{ReadFile}!InputOutput.h@{InputOutput.h}}
+\doxysubsubsection{\texorpdfstring{ReadFile()}{ReadFile()}}
+{\footnotesize\ttfamily \label{Main_2libs_2InputOutput_8h_a93199f676f271c5c783be42fd585cd32} 
+char \texorpdfstring{$\ast$}{*} Read\+File (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{file}{}\end{DoxyParamCaption})}
+
+
+
+Função para ler um arquivo. 
+
+Esta função recebe o nome de um ficheiro, lê o ficheiro e retorna os dados lidos. Se o ficheiro não puder ser aberto, retorna NULL. Caso contrário, lê o ficheiro inteiro para uma string e retorna essa string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Nome do arquivo a ser lido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char\texorpdfstring{$\ast$}{*} Retorna os dados lidos do arquivo. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00067\ \{}
+\DoxyCodeLine{00068\ \ \ \ \ FILE*\ ficheiro\ =\ fopen(file,\ \textcolor{stringliteral}{"{}r"{}});}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordflow}{if}\ (ficheiro\ ==\ NULL)\ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ fseek(ficheiro,\ 0,\ SEEK\_END);\ \textcolor{comment}{//Coloca\ o\ apontador\ para\ fille\ no\ fim\ do\ arquivo}}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{int}\ tamanho\ =\ ftell(ficheiro);\ \textcolor{comment}{//Calcula\ o\ tamanho\ em\ bytes\ }}
+\DoxyCodeLine{00073\ \ \ \ \ fseek(ficheiro,\ 0,\ SEEK\_SET);\ \textcolor{comment}{//Coloca\ o\ apontador\ para\ fille\ no\ início\ do\ arquivo}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{char}*\ dados\ =\ (\textcolor{keywordtype}{char}*)malloc(\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{char})\ *\ tamanho\ +\ 1);\ \textcolor{comment}{//Aloca\ memória\ para\ o\ tamanho\ do\ ficheiro\ +\ 1}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{comment}{//Informa\ me\ o\ tamanho\ lido\ em\ bytes\ coloca\ o\ final\ da\ string\ como\ NULL}}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordflow}{if}\ (dados\ !=\ NULL)}
+\DoxyCodeLine{00079\ \ \ \ \ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ bytesRead\ =\ fread(dados,\ 1,\ tamanho,\ ficheiro);}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ dados[bytesRead]\ =\ \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{00082\ \ \ \ \ \}}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00084\ \ \ \ \ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ free(dados);}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ dados\ =\ NULL;}
+\DoxyCodeLine{00087\ \ \ \ \ \}}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ fclose(ficheiro);}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordflow}{return}\ dados;}
+\DoxyCodeLine{00091\ \}}
+
+\end{DoxyCode}

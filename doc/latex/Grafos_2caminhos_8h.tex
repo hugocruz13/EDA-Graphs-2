@@ -1,0 +1,396 @@
+\doxysection{C\+:/\+Users/hugoc/\+One\+Drive -\/ Instituto Politécnico do Cávado e do Ave/2023\+\_\+2024/\+Estruturas de Dados Avançadas/\+Dev/\+Trab\+II\+\_\+\+ESI\+\_\+\+EDA\+\_\+\+Hugo\+\_\+\+Cruz\+\_\+a23010/src/\+Grafos/caminhos.h File Reference}
+\hypertarget{Grafos_2caminhos_8h}{}\label{Grafos_2caminhos_8h}\index{C:/Users/hugoc/OneDrive -\/ Instituto Politécnico do Cávado e do Ave/2023\_2024/Estruturas de Dados Avançadas/Dev/TrabII\_ESI\_EDA\_Hugo\_Cruz\_a23010/src/Grafos/caminhos.h@{C:/Users/hugoc/OneDrive -\/ Instituto Politécnico do Cávado e do Ave/2023\_2024/Estruturas de Dados Avançadas/Dev/TrabII\_ESI\_EDA\_Hugo\_Cruz\_a23010/src/Grafos/caminhos.h}}
+
+
+Este arquivo de cabeçalho define as estruturas de dados e as funções para manipular caminhos num grafo.  
+
+
+{\ttfamily \#include "{}grafo.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{Grafos_2caminhos_8h_aed2f18906f7c32b0f64046f296774de6}{Inicializar\+Arrays}} (int \texorpdfstring{$\ast$}{*}dis\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Inicializa os arrays de distâncias. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Grafos_2caminhos_8h_aa00437bc4c82e4823b49b8d67250dd32}{Contador\+Vertices}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g)
+\begin{DoxyCompactList}\small\item\em Conta o número de vértices num grafo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Grafos_2caminhos_8h_a1b0f554c58f8d1dd6d51f5789d8c4421}{Distancia\+Minima}} (int distancia\mbox{[}$\,$\mbox{]}, bool visitado\mbox{[}$\,$\mbox{]}, int n)
+\begin{DoxyCompactList}\small\item\em Encontra a o vértice com a distância mínima. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Grafos_2caminhos_8h_ab396c148f509825fef648e8bfa0cef04}{Dijkstra}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, int origem, int distancias\+Finais\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Algoritmo de Dijkstra. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Grafos_2caminhos_8h_a0674a798da6ed67de009ea11ea80cbe1}{Distancia\+Minima\+Entre\+Vertices}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, int origem, int destino)
+\begin{DoxyCompactList}\small\item\em Calcula a distância mínima entre dois vértices num grafo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{Grafos_2caminhos_8h_acce91404091fcc4a4881bce773c49374}{Existe\+Caminho\+Grafo}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, int origem, int destino)
+\begin{DoxyCompactList}\small\item\em Verifica se existe um caminho entre dois vértices num grafo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{Grafos_2caminhos_8h_a1e13beea186e5093f9f1b7e9a177c9d5}{Criar\+Grafo\+Caminho\+Mais\+Curto}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g)
+\begin{DoxyCompactList}\small\item\em Cria um grafo com os caminhos mais curto para cada vertice. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Este arquivo de cabeçalho define as estruturas de dados e as funções para manipular caminhos num grafo. 
+
+\begin{DoxyAuthor}{Author}
+Hugo Cruz (a23010) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+48.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/05-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{Grafos_2caminhos_8h_aa00437bc4c82e4823b49b8d67250dd32}\index{caminhos.h@{caminhos.h}!ContadorVertices@{ContadorVertices}}
+\index{ContadorVertices@{ContadorVertices}!caminhos.h@{caminhos.h}}
+\doxysubsubsection{\texorpdfstring{ContadorVertices()}{ContadorVertices()}}
+{\footnotesize\ttfamily \label{Grafos_2caminhos_8h_aa00437bc4c82e4823b49b8d67250dd32} 
+int Contador\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g}{}\end{DoxyParamCaption})}
+
+
+
+Conta o número de vértices num grafo. 
+
+Esta função conta o número de vértices num grafo. Retorna o número de vértices no grafo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & O grafo a ser analisado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int O número de vértices no grafo. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00044\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordflow}{if}\ (g\ ==\ NULL)}
+\DoxyCodeLine{00046\ \ \ \ \ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00048\ \ \ \ \ \}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{int}\ contador\ =\ 0;}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ aux\ =\ g-\/>\mbox{\hyperlink{structGrafo_a31e63029678ada7e12934b21e59e1d5e}{inicioGrafo}};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{comment}{//Avança\ na\ lista\ e\ conta\ o\ número\ de\ vertices.}}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordflow}{while}\ (aux)}
+\DoxyCodeLine{00056\ \ \ \ \ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ contador++;}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ aux\ =\ aux-\/>\mbox{\hyperlink{structVertice_a04a789b041a0faefae14812d9e9163d0}{nextV}};}
+\DoxyCodeLine{00059\ \ \ \ \ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordflow}{return}\ contador;}
+\DoxyCodeLine{00062\ \}}
+
+\end{DoxyCode}
+\Hypertarget{Grafos_2caminhos_8h_a1e13beea186e5093f9f1b7e9a177c9d5}\index{caminhos.h@{caminhos.h}!CriarGrafoCaminhoMaisCurto@{CriarGrafoCaminhoMaisCurto}}
+\index{CriarGrafoCaminhoMaisCurto@{CriarGrafoCaminhoMaisCurto}!caminhos.h@{caminhos.h}}
+\doxysubsubsection{\texorpdfstring{CriarGrafoCaminhoMaisCurto()}{CriarGrafoCaminhoMaisCurto()}}
+{\footnotesize\ttfamily \label{Grafos_2caminhos_8h_a1e13beea186e5093f9f1b7e9a177c9d5} 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Criar\+Grafo\+Caminho\+Mais\+Curto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g}{}\end{DoxyParamCaption})}
+
+
+
+Cria um grafo com os caminhos mais curto para cada vertice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo original \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Grafo\texorpdfstring{$\ast$}{*} Apontador para o novo grafo criado
+\end{DoxyReturn}
+Esta função cria um novo grafo com os caminhos mais curtos para cada vértice
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo original \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Grafo\texorpdfstring{$\ast$}{*} Apontador para o novo grafo criado 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00244\ \{}
+\DoxyCodeLine{00245\ \ \ \ \ \textcolor{keywordtype}{bool}\ inf;}
+\DoxyCodeLine{00246\ \ \ \ \ \textcolor{keywordtype}{int}\ distanciasFinais[\mbox{\hyperlink{Grafos_2grafo_8h_a392fb874e547e582e9c66a08a1f23326}{MAX}}];}
+\DoxyCodeLine{00247\ \ \ \ \ \textcolor{keywordtype}{int}\ verticeAnt[\mbox{\hyperlink{Grafos_2grafo_8h_a392fb874e547e582e9c66a08a1f23326}{MAX}}];}
+\DoxyCodeLine{00248\ }
+\DoxyCodeLine{00249\ \ \ \ \ \textcolor{keywordtype}{int}\ numVertices\ =\ \mbox{\hyperlink{caminhos_8c_aa00437bc4c82e4823b49b8d67250dd32}{ContadorVertices}}(g);}
+\DoxyCodeLine{00250\ }
+\DoxyCodeLine{00251\ \ \ \ \ \mbox{\hyperlink{structGrafo}{Grafo}}*\ novo\ =\ \mbox{\hyperlink{grafo_8c_aee694050fbd7e4d9a8d3057297728415}{CriarGrafo}}(\&inf);}
+\DoxyCodeLine{00252\ }
+\DoxyCodeLine{00253\ \ \ \ \ \textcolor{comment}{//Cria\ os\ vertices}}
+\DoxyCodeLine{00254\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 1;\ i\ <=\ numVertices;\ i++)}
+\DoxyCodeLine{00255\ \ \ \ \ \{}
+\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ novo\ =\ \mbox{\hyperlink{grafo_8c_aedadb34da858a8042cd06bbdee1eeff0}{InserirVerticeGrafo}}(novo,\ i,\ \&inf);}
+\DoxyCodeLine{00257\ \ \ \ \ \}}
+\DoxyCodeLine{00258\ }
+\DoxyCodeLine{00259\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ aux\ =\ novo-\/>\mbox{\hyperlink{structGrafo_a31e63029678ada7e12934b21e59e1d5e}{inicioGrafo}};}
+\DoxyCodeLine{00260\ }
+\DoxyCodeLine{00261\ \ \ \ \ \textcolor{comment}{//Quantos\ houver\ vertices}}
+\DoxyCodeLine{00262\ \ \ \ \ \textcolor{keywordflow}{while}\ (aux)}
+\DoxyCodeLine{00263\ \ \ \ \ \{}
+\DoxyCodeLine{00264\ }
+\DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{caminhos_8c_aed2f18906f7c32b0f64046f296774de6}{InicializarArrays}}(distanciasFinais);}
+\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{caminhos_8c_a7ca9da3193e0376b2266f8bedecebf09}{Dijkstra}}(g,\ aux-\/>\mbox{\hyperlink{structVertice_a7441ef0865bcb3db9b8064dd7375c1ea}{id}},\ distanciasFinais,\ verticeAnt);\ \textcolor{comment}{//\ Recebe\ um\ arrays\ com\ os\ valores\ mínimos\ de\ uma\ origem\ a\ todos\ os\ vertices}}
+\DoxyCodeLine{00267\ }
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ j\ =\ 1;\ j\ <=\ numVertices;\ j++)}
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00270\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (distanciasFinais[j]\ ==\ INT\_MAX)}
+\DoxyCodeLine{00271\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00272\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ novo\ =\ \mbox{\hyperlink{grafo_8c_a8b8fc202071f5d2f19e13f6ab582400a}{InserirAdjGrafo}}(novo,\ aux-\/>\mbox{\hyperlink{structVertice_a7441ef0865bcb3db9b8064dd7375c1ea}{id}},\ j,\ 0,\ \&inf);}
+\DoxyCodeLine{00273\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00274\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00275\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00276\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ novo\ =\ \mbox{\hyperlink{grafo_8c_a8b8fc202071f5d2f19e13f6ab582400a}{InserirAdjGrafo}}(novo,\ aux-\/>\mbox{\hyperlink{structVertice_a7441ef0865bcb3db9b8064dd7375c1ea}{id}},\ j,\ distanciasFinais[j],\ \&inf);}
+\DoxyCodeLine{00277\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00278\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00279\ }
+\DoxyCodeLine{00280\ \ \ \ \ \ \ \ \ aux\ =\ aux-\/>\mbox{\hyperlink{structVertice_a04a789b041a0faefae14812d9e9163d0}{nextV}};}
+\DoxyCodeLine{00281\ \ \ \ \ \}}
+\DoxyCodeLine{00282\ }
+\DoxyCodeLine{00283\ \ \ \ \ \textcolor{keywordflow}{return}\ novo;}
+\DoxyCodeLine{00284\ \}}
+
+\end{DoxyCode}
+\Hypertarget{Grafos_2caminhos_8h_ab396c148f509825fef648e8bfa0cef04}\index{caminhos.h@{caminhos.h}!Dijkstra@{Dijkstra}}
+\index{Dijkstra@{Dijkstra}!caminhos.h@{caminhos.h}}
+\doxysubsubsection{\texorpdfstring{Dijkstra()}{Dijkstra()}}
+{\footnotesize\ttfamily \label{Grafos_2caminhos_8h_ab396c148f509825fef648e8bfa0cef04} 
+void Dijkstra (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{int}]{origem}{, }\item[{int}]{distancias\+Finais}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Algoritmo de Dijkstra. 
+
+Esta função implementa o algoritmo de Dijkstra, que é usado para encontrar os caminhos mais curtos de um vértice de origem para todos os outros vértices num grafo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo no qual o algoritmo de Dijkstra será executado \\
+\hline
+{\em origem} & O vértice de origem para o qual os caminhos mais curtos serão calculados \\
+\hline
+{\em distancias\+Finais} & Array que será preenchido com as distâncias mais curtas da origem para cada vértice \\
+\hline
+\end{DoxyParams}
+\Hypertarget{Grafos_2caminhos_8h_a1b0f554c58f8d1dd6d51f5789d8c4421}\index{caminhos.h@{caminhos.h}!DistanciaMinima@{DistanciaMinima}}
+\index{DistanciaMinima@{DistanciaMinima}!caminhos.h@{caminhos.h}}
+\doxysubsubsection{\texorpdfstring{DistanciaMinima()}{DistanciaMinima()}}
+{\footnotesize\ttfamily \label{Grafos_2caminhos_8h_a1b0f554c58f8d1dd6d51f5789d8c4421} 
+int Distancia\+Minima (\begin{DoxyParamCaption}\item[{int}]{distancia}{\mbox{[}$\,$\mbox{]}, }\item[{bool}]{visitado}{\mbox{[}$\,$\mbox{]}, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Encontra a o vértice com a distância mínima. 
+
+Esta função encontra o vértice com a distância mínima, a partir do conjunto de vértices ainda não incluídos no caminho mais curto. Retorna o id do vértice com a distância mínima.
+
+
+\begin{DoxyParams}{Parameters}
+{\em distancia} & Array com as distâncias acumuladas de cada vértice. \\
+\hline
+{\em visitado} & Array que indica se um vértice foi ou não visitado. \\
+\hline
+{\em n} & Número total de vértices. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int O id do vértice com a distância mínima. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00076\ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordflow}{if}\ (distancia\ ==\ NULL\ ||\ visitado\ ==\ NULL)}
+\DoxyCodeLine{00078\ \ \ \ \ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00080\ \ \ \ \ \}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{int}\ min\ =\ INT\_MAX;}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{int}\ posicao\ =\ -\/1;}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{comment}{//Corre\ o\ arrays\ de\ booleanos\ verifica\ se\ o\ vértice\ já\ foi\ visitado\ e\ encontrar\ o\ valor\ mínimo\ das\ adjacências}}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 1;\ i\ <=\ n;\ i++)}
+\DoxyCodeLine{00087\ \ \ \ \ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (visitado[i]\ ==\ \textcolor{keyword}{false}\ \&\&\ distancia[i]\ <=\ min)}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ min\ =\ distancia[i];}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ posicao\ =\ i;}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00093\ \ \ \ \ \}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordflow}{return}\ posicao;}
+\DoxyCodeLine{00096\ \}}
+
+\end{DoxyCode}
+\Hypertarget{Grafos_2caminhos_8h_a0674a798da6ed67de009ea11ea80cbe1}\index{caminhos.h@{caminhos.h}!DistanciaMinimaEntreVertices@{DistanciaMinimaEntreVertices}}
+\index{DistanciaMinimaEntreVertices@{DistanciaMinimaEntreVertices}!caminhos.h@{caminhos.h}}
+\doxysubsubsection{\texorpdfstring{DistanciaMinimaEntreVertices()}{DistanciaMinimaEntreVertices()}}
+{\footnotesize\ttfamily \label{Grafos_2caminhos_8h_a0674a798da6ed67de009ea11ea80cbe1} 
+int Distancia\+Minima\+Entre\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{int}]{origem}{, }\item[{int}]{destino}{}\end{DoxyParamCaption})}
+
+
+
+Calcula a distância mínima entre dois vértices num grafo. 
+
+Esta função calcula a distância mínima entre dois vértices num grafo. O grafo, o vértice de origem e o vértice de destino são passados como argumentos. A função retorna a distância mínima entre os vértices de origem e destino.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo onde a operação será realizada \\
+\hline
+{\em origem} & Vértice de origem \\
+\hline
+{\em destino} & Vértice de destino \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int A distância mínima entre os vértices de origem e destino.
+\end{DoxyReturn}
+Esta função calcula a distância mínima entre dois vértices num grafo. A função retorna a distância mínima entre os vértices de origem e destino.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo onde a operação será realizada \\
+\hline
+{\em origem} & Vértice de origem \\
+\hline
+{\em destino} & Vértice de destino \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int A distância mínima entre os vértices de origem e destino. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00173\ \{}
+\DoxyCodeLine{00174\ \ \ \ \ \textcolor{keywordflow}{if}\ (g\ ==\ NULL)}
+\DoxyCodeLine{00175\ \ \ \ \ \{}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00177\ \ \ \ \ \}}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keywordtype}{int}\ valor\ =\ 0;}
+\DoxyCodeLine{00180\ \ \ \ \ \textcolor{keywordtype}{int}\ distanciasFinais[\mbox{\hyperlink{Grafos_2grafo_8h_a392fb874e547e582e9c66a08a1f23326}{MAX}}];}
+\DoxyCodeLine{00181\ \ \ \ \ \textcolor{keywordtype}{int}\ verticeAnt[\mbox{\hyperlink{Grafos_2grafo_8h_a392fb874e547e582e9c66a08a1f23326}{MAX}}];}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00183\ \ \ \ \ \mbox{\hyperlink{caminhos_8c_aed2f18906f7c32b0f64046f296774de6}{InicializarArrays}}(distanciasFinais);}
+\DoxyCodeLine{00184\ \ \ \ \ \mbox{\hyperlink{caminhos_8c_a7ca9da3193e0376b2266f8bedecebf09}{Dijkstra}}(g,\ origem,\ distanciasFinais,\ verticeAnt);}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00186\ \ \ \ \ \textcolor{comment}{//Verifica\ recebe\ o\ peso\ de\ uma\ adjacência}}
+\DoxyCodeLine{00187\ \ \ \ \ \textcolor{keywordflow}{if}\ (distanciasFinais[destino]\ !=\ INT\_MAX\ \&\&\ distanciasFinais[destino]\ >\ 0)}
+\DoxyCodeLine{00188\ \ \ \ \ \{}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ distanciasFinais[destino];}
+\DoxyCodeLine{00190\ \ \ \ \ \}}
+\DoxyCodeLine{00191\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00192\ \ \ \ \ \{}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ valor;}
+\DoxyCodeLine{00194\ \ \ \ \ \}}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00196\ \}}
+
+\end{DoxyCode}
+\Hypertarget{Grafos_2caminhos_8h_acce91404091fcc4a4881bce773c49374}\index{caminhos.h@{caminhos.h}!ExisteCaminhoGrafo@{ExisteCaminhoGrafo}}
+\index{ExisteCaminhoGrafo@{ExisteCaminhoGrafo}!caminhos.h@{caminhos.h}}
+\doxysubsubsection{\texorpdfstring{ExisteCaminhoGrafo()}{ExisteCaminhoGrafo()}}
+{\footnotesize\ttfamily \label{Grafos_2caminhos_8h_acce91404091fcc4a4881bce773c49374} 
+bool Existe\+Caminho\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{int}]{origem}{, }\item[{int}]{destino}{}\end{DoxyParamCaption})}
+
+
+
+Verifica se existe um caminho entre dois vértices num grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo onde a operação será realizada \\
+\hline
+{\em origem} & Vértice de origem \\
+\hline
+{\em destino} & Vértice de destino \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Se existir um caminho válido entre os vértices de origem e destino 
+
+false Se não existir um caminho válido entre os vértices de origem e destino
+\end{DoxyReturn}
+Esta função verifica se existe um caminho entre dois vértices num grafo. O grafo, o vértice de origem e o vértice de destino são passados como argumentos. A função retorna verdadeiro se existir um caminho válido entre os vértices de origem e destino, e falso caso contrário.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo onde a operação será realizada \\
+\hline
+{\em origem} & Vértice de origem \\
+\hline
+{\em destino} & Vértice de destino \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Se existir um caminho válido entre os vértices de origem e destino 
+
+false Se não existir um caminho válido entre os vértices de origem e destino 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00212\ \{}
+\DoxyCodeLine{00213\ \ \ \ \ \textcolor{keywordflow}{if}\ (g\ ==\ NULL)}
+\DoxyCodeLine{00214\ \ \ \ \ \{}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00216\ \ \ \ \ \}}
+\DoxyCodeLine{00217\ }
+\DoxyCodeLine{00218\ \ \ \ \ \textcolor{keywordtype}{int}\ verticeAnt[\mbox{\hyperlink{Grafos_2grafo_8h_a392fb874e547e582e9c66a08a1f23326}{MAX}}];}
+\DoxyCodeLine{00219\ \ \ \ \ \textcolor{keywordtype}{int}\ distanciasFinais[\mbox{\hyperlink{Grafos_2grafo_8h_a392fb874e547e582e9c66a08a1f23326}{MAX}}];}
+\DoxyCodeLine{00220\ }
+\DoxyCodeLine{00221\ \ \ \ \ \mbox{\hyperlink{caminhos_8c_aed2f18906f7c32b0f64046f296774de6}{InicializarArrays}}(distanciasFinais);}
+\DoxyCodeLine{00222\ \ \ \ \ \mbox{\hyperlink{caminhos_8c_a7ca9da3193e0376b2266f8bedecebf09}{Dijkstra}}(g,\ origem,\ distanciasFinais,\ verticeAnt);}
+\DoxyCodeLine{00223\ }
+\DoxyCodeLine{00224\ \ \ \ \ \textcolor{comment}{//Verifica\ recebe\ o\ peso\ de\ uma\ adjacência\ e\ verifica\ se\ é\ valido\ }}
+\DoxyCodeLine{00225\ \ \ \ \ \textcolor{keywordflow}{if}\ (distanciasFinais[destino]\ !=\ INT\_MAX\ \&\&\ distanciasFinais[destino]\ >\ 0)}
+\DoxyCodeLine{00226\ \ \ \ \ \{}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00228\ \ \ \ \ \}}
+\DoxyCodeLine{00229\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00230\ \ \ \ \ \{}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00232\ \ \ \ \ \}}
+\DoxyCodeLine{00233\ \}}
+
+\end{DoxyCode}
+\Hypertarget{Grafos_2caminhos_8h_aed2f18906f7c32b0f64046f296774de6}\index{caminhos.h@{caminhos.h}!InicializarArrays@{InicializarArrays}}
+\index{InicializarArrays@{InicializarArrays}!caminhos.h@{caminhos.h}}
+\doxysubsubsection{\texorpdfstring{InicializarArrays()}{InicializarArrays()}}
+{\footnotesize\ttfamily \label{Grafos_2caminhos_8h_aed2f18906f7c32b0f64046f296774de6} 
+void Inicializar\+Arrays (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{dis}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Inicializa os arrays de distâncias. 
+
+Esta função inicializa os arrays de distâncias, atribuindo a cada elemento o valor máximo de um inteiro.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dis} & Array de distâncias a ser inicializado. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordflow}{if}\ (dis\ ==\ NULL)}
+\DoxyCodeLine{00024\ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00026\ \ \ \ \ \}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//Inicializa\ um\ arrays\ no\ valor\ maximo\ de\ um\ inteiro}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ \mbox{\hyperlink{Grafos_2grafo_8h_a392fb874e547e582e9c66a08a1f23326}{MAX}};\ i++)}
+\DoxyCodeLine{00030\ \ \ \ \ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ dis[i]\ =\ INT\_MAX;}
+\DoxyCodeLine{00032\ \ \ \ \ \}}
+\DoxyCodeLine{00033\ \}}
+
+\end{DoxyCode}

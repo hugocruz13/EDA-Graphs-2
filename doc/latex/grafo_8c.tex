@@ -1,0 +1,411 @@
+\doxysection{C\+:/\+Users/hugoc/\+One\+Drive -\/ Instituto Politécnico do Cávado e do Ave/2023\+\_\+2024/\+Estruturas de Dados Avançadas/\+Dev/\+Trab\+II\+\_\+\+ESI\+\_\+\+EDA\+\_\+\+Hugo\+\_\+\+Cruz\+\_\+a23010/src/\+Grafos/grafo.c File Reference}
+\hypertarget{grafo_8c}{}\label{grafo_8c}\index{C:/Users/hugoc/OneDrive -\/ Instituto Politécnico do Cávado e do Ave/2023\_2024/Estruturas de Dados Avançadas/Dev/TrabII\_ESI\_EDA\_Hugo\_Cruz\_a23010/src/Grafos/grafo.c@{C:/Users/hugoc/OneDrive -\/ Instituto Politécnico do Cávado e do Ave/2023\_2024/Estruturas de Dados Avançadas/Dev/TrabII\_ESI\_EDA\_Hugo\_Cruz\_a23010/src/Grafos/grafo.c}}
+
+
+Ficheiro de implementação das funções que manipulam a estrutura de dados \doxylink{structGrafo}{Grafo}.  
+
+
+{\ttfamily \#include "{}grafo.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{grafo_8c_a15b1491f2f9138e548cd9113dbe1e7c8}{Apaga\+Grafo}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g)
+\begin{DoxyCompactList}\small\item\em Apaga um grafo e limpa a memória alocada. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{grafo_8c_aee694050fbd7e4d9a8d3057297728415}{Criar\+Grafo}} (bool \texorpdfstring{$\ast$}{*}inf)
+\begin{DoxyCompactList}\small\item\em Cria um novo grafo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{grafo_8c_aedadb34da858a8042cd06bbdee1eeff0}{Inserir\+Vertice\+Grafo}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, int novo, bool \texorpdfstring{$\ast$}{*}inf)
+\begin{DoxyCompactList}\small\item\em Insere um novo vértice no grafo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{grafo_8c_a8b8fc202071f5d2f19e13f6ab582400a}{Inserir\+Adj\+Grafo}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, int origem, int destino, int peso, bool \texorpdfstring{$\ast$}{*}inf)
+\begin{DoxyCompactList}\small\item\em Insere uma nova aresta no grafo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{grafo_8c_a6b3346826db5f632e5094243d02d18ef}{Elimina\+Vertice\+Grafo}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, int id, bool \texorpdfstring{$\ast$}{*}inf)
+\begin{DoxyCompactList}\small\item\em Elimina um vértice do grafo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{grafo_8c_ac47423da8fe6a8401cd7b8fda7284335}{Elimina\+Adj\+Grafo}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, int origem, int destino, bool \texorpdfstring{$\ast$}{*}inf)
+\begin{DoxyCompactList}\small\item\em Elimina uma aresta do grafo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{grafo_8c_a99de201d3b32015a7efbbd0ec8e0f513}{Existe\+Adj\+Dois\+Vertices}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}inicio, int origem, int destino)
+\begin{DoxyCompactList}\small\item\em Verifica se existe uma aresta entre dois vértices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ficheiro de implementação das funções que manipulam a estrutura de dados \doxylink{structGrafo}{Grafo}. 
+
+\begin{DoxyAuthor}{Author}
+Hugo Cruz (a23010) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+156.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/05-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{grafo_8c_a15b1491f2f9138e548cd9113dbe1e7c8}\index{grafo.c@{grafo.c}!ApagaGrafo@{ApagaGrafo}}
+\index{ApagaGrafo@{ApagaGrafo}!grafo.c@{grafo.c}}
+\doxysubsubsection{\texorpdfstring{ApagaGrafo()}{ApagaGrafo()}}
+{\footnotesize\ttfamily \label{grafo_8c_a15b1491f2f9138e548cd9113dbe1e7c8} 
+void Apaga\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g}{}\end{DoxyParamCaption})}
+
+
+
+Apaga um grafo e limpa a memória alocada. 
+
+Esta função apaga um grafo e liberta a memória alocada. Ela percorre todos os vértices e adjacências do grafo, apagando-\/os um a um
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo a ser apagado \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordflow}{if}\ (g\ ==\ NULL)}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ v\ =\ g-\/>\mbox{\hyperlink{structGrafo_a31e63029678ada7e12934b21e59e1d5e}{inicioGrafo}};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//Apagar\ todos\ os\ vertices\ e\ adjacências}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordflow}{while}\ (v\ !=\ NULL)}
+\DoxyCodeLine{00030\ \ \ \ \ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structAdjacente}{Adjacente}}*\ a\ =\ v-\/>\mbox{\hyperlink{structVertice_a23c955644fa772c43b2766549bf15dae}{nextA}};}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (a\ !=\ NULL)}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structAdjacente}{Adjacente}}*\ temp\ =\ a;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ a\ =\ a-\/>\mbox{\hyperlink{structAdjacente_a0441fada151d7e646765f5743b2d37f3}{next}};}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{adjacente_8c_ab17c902df2d7d474cf378d19455488db}{ApagarAdjacencia}}(temp);}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ tempV\ =\ v;}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ v\ =\ v-\/>\mbox{\hyperlink{structVertice_a04a789b041a0faefae14812d9e9163d0}{nextV}};}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{vertices_8c_a8079b99a16e9a7317c67b888fdc7de37}{ApagarVertice}}(tempV);}
+\DoxyCodeLine{00042\ \ \ \ \ \}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ free(g);}
+\DoxyCodeLine{00045\ \}}
+
+\end{DoxyCode}
+\Hypertarget{grafo_8c_aee694050fbd7e4d9a8d3057297728415}\index{grafo.c@{grafo.c}!CriarGrafo@{CriarGrafo}}
+\index{CriarGrafo@{CriarGrafo}!grafo.c@{grafo.c}}
+\doxysubsubsection{\texorpdfstring{CriarGrafo()}{CriarGrafo()}}
+{\footnotesize\ttfamily \label{grafo_8c_aee694050fbd7e4d9a8d3057297728415} 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Criar\+Grafo (\begin{DoxyParamCaption}\item[{bool \texorpdfstring{$\ast$}{*}}]{inf}{}\end{DoxyParamCaption})}
+
+
+
+Cria um novo grafo. 
+
+Esta função cria um novo grafo. Ela aloca memória para um novo grafo e retorna um apontador para o grafo criado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inf} & Apontador para uma variável booleana que será definida como true se a criação do grafo for bem-\/sucedida, e false caso contrário. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o novo grafo criado. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00057\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{structGrafo}{Grafo}}*\ aux\ =\ (\mbox{\hyperlink{structGrafo}{Grafo}}*)malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structGrafo}{Grafo}}));\ \textcolor{comment}{//Aloca\ memória\ para\ um\ grafo}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordflow}{if}\ (aux\ ==\ NULL)}
+\DoxyCodeLine{00063\ \ \ \ \ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00066\ \ \ \ \ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ aux-\/>\mbox{\hyperlink{structGrafo_a31e63029678ada7e12934b21e59e1d5e}{inicioGrafo}}\ =\ NULL;}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ *inf\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordflow}{return}\ aux;}
+\DoxyCodeLine{00072\ \}}
+
+\end{DoxyCode}
+\Hypertarget{grafo_8c_ac47423da8fe6a8401cd7b8fda7284335}\index{grafo.c@{grafo.c}!EliminaAdjGrafo@{EliminaAdjGrafo}}
+\index{EliminaAdjGrafo@{EliminaAdjGrafo}!grafo.c@{grafo.c}}
+\doxysubsubsection{\texorpdfstring{EliminaAdjGrafo()}{EliminaAdjGrafo()}}
+{\footnotesize\ttfamily \label{grafo_8c_ac47423da8fe6a8401cd7b8fda7284335} 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Elimina\+Adj\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{int}]{origem}{, }\item[{int}]{destino}{, }\item[{bool \texorpdfstring{$\ast$}{*}}]{inf}{}\end{DoxyParamCaption})}
+
+
+
+Elimina uma aresta do grafo. 
+
+Esta função elimina uma aresta do grafo. Ela verifica se a aresta a ser eliminada existe e, em seguida, remove-\/a do grafo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo do qual a aresta será eliminada. \\
+\hline
+{\em origem} & O valor do vértice de origem da aresta. \\
+\hline
+{\em destino} & O valor do vértice de destino da aresta. \\
+\hline
+{\em inf} & Apontador para uma variável booleana que será definida como true se a eliminação for bem-\/sucedida, e false caso contrário. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o grafo com a aresta eliminada. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00194\ \{}
+\DoxyCodeLine{00195\ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ \ \ \ \ \textcolor{keywordflow}{if}\ (g\ ==\ NULL)}
+\DoxyCodeLine{00198\ \ \ \ \ \{}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00200\ \ \ \ \ \}}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00202\ \ \ \ \ \textcolor{comment}{//Coloca\ se\ no\ posição\ de\ origem}}
+\DoxyCodeLine{00203\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ origemVertice\ =\ \mbox{\hyperlink{vertices_8c_a7124c89689a5c26a3bffd300421a3d7f}{ColocaNumaPosicaoLista}}(g-\/>\mbox{\hyperlink{structGrafo_a31e63029678ada7e12934b21e59e1d5e}{inicioGrafo}},\ origem,\ \&inf);}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ \ \ \ \ \textcolor{keywordflow}{if}\ (origemVertice\ ==\ NULL)}
+\DoxyCodeLine{00206\ \ \ \ \ \{}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ g;}
+\DoxyCodeLine{00209\ \ \ \ \ \}}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00211\ \ \ \ \ \textcolor{comment}{//Coloca\ se\ no\ posição\ de\ destino}}
+\DoxyCodeLine{00212\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ destinoVertice\ =\ \mbox{\hyperlink{vertices_8c_a7124c89689a5c26a3bffd300421a3d7f}{ColocaNumaPosicaoLista}}(g-\/>\mbox{\hyperlink{structGrafo_a31e63029678ada7e12934b21e59e1d5e}{inicioGrafo}},\ destino,\ \&inf);}
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00214\ \ \ \ \ \textcolor{keywordflow}{if}\ (destinoVertice\ ==\ NULL)}
+\DoxyCodeLine{00215\ \ \ \ \ \{}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ g;}
+\DoxyCodeLine{00218\ \ \ \ \ \}}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00220\ \ \ \ \ \textcolor{comment}{//Apaga\ um\ adjacência\ entre\ dois\ vértices}}
+\DoxyCodeLine{00221\ \ \ \ \ origemVertice-\/>\mbox{\hyperlink{structVertice_a23c955644fa772c43b2766549bf15dae}{nextA}}\ =\ \mbox{\hyperlink{adjacente_8c_ae751763c1bbb374fbc5647904e01c47d}{EliminaUmaAdj}}(origemVertice-\/>\mbox{\hyperlink{structVertice_a23c955644fa772c43b2766549bf15dae}{nextA}},\ destino,\ \&inf);}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ \ \ \ \ \textcolor{keywordflow}{return}\ g;}
+\DoxyCodeLine{00224\ \}}
+
+\end{DoxyCode}
+\Hypertarget{grafo_8c_a6b3346826db5f632e5094243d02d18ef}\index{grafo.c@{grafo.c}!EliminaVerticeGrafo@{EliminaVerticeGrafo}}
+\index{EliminaVerticeGrafo@{EliminaVerticeGrafo}!grafo.c@{grafo.c}}
+\doxysubsubsection{\texorpdfstring{EliminaVerticeGrafo()}{EliminaVerticeGrafo()}}
+{\footnotesize\ttfamily \label{grafo_8c_a6b3346826db5f632e5094243d02d18ef} 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Elimina\+Vertice\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{int}]{id}{, }\item[{bool \texorpdfstring{$\ast$}{*}}]{inf}{}\end{DoxyParamCaption})}
+
+
+
+Elimina um vértice do grafo. 
+
+Esta função elimina um vértice do grafo. Ela verifica se o vértice a ser eliminado existe e, em seguida, remove-\/o do grafo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo do qual o vértice será eliminado. \\
+\hline
+{\em id} & O valor do vértice a ser eliminado. \\
+\hline
+{\em inf} & Apontador para uma variável booleana que será definida como true se a eliminação for bem-\/sucedida, e false caso contrário. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o grafo com o vértice eliminado. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00165\ \{}
+\DoxyCodeLine{00166\ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \ \ \ \ \textcolor{keywordflow}{if}\ (g\ ==\ NULL\ )}
+\DoxyCodeLine{00169\ \ \ \ \ \{}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00171\ \ \ \ \ \}}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00173\ \ \ \ \ \textcolor{comment}{//Elimina\ o\ vértice\ da\ lista\ de\ vertices\ do\ grafo}}
+\DoxyCodeLine{00174\ \ \ \ \ g-\/>\mbox{\hyperlink{structGrafo_a31e63029678ada7e12934b21e59e1d5e}{inicioGrafo}}\ =\ \mbox{\hyperlink{vertices_8c_aa005270a787e8762a05042e2066d11e2}{EliminarVertice}}(g-\/>\mbox{\hyperlink{structGrafo_a31e63029678ada7e12934b21e59e1d5e}{inicioGrafo}},\ \textcolor{keywordtype}{id},\ \&inf);}
+\DoxyCodeLine{00175\ \ \ \ \ \textcolor{comment}{//Apaga\ todas\ as\ adjacências\ relacionadas\ com\ o\ id}}
+\DoxyCodeLine{00176\ \ \ \ \ g-\/>\mbox{\hyperlink{structGrafo_a31e63029678ada7e12934b21e59e1d5e}{inicioGrafo}}\ =\ \mbox{\hyperlink{vertices_8c_aff28cdbf110e005743a7073a19c5dcee}{EliminarTodasAdjacenciasVertice}}(g-\/>\mbox{\hyperlink{structGrafo_a31e63029678ada7e12934b21e59e1d5e}{inicioGrafo}},\ \textcolor{keywordtype}{id},\ \&inf);}
+\DoxyCodeLine{00177\ \ \ \ \ }
+\DoxyCodeLine{00178\ \ \ \ \ \textcolor{keywordflow}{return}\ g;}
+\DoxyCodeLine{00179\ \}}
+
+\end{DoxyCode}
+\Hypertarget{grafo_8c_a99de201d3b32015a7efbbd0ec8e0f513}\index{grafo.c@{grafo.c}!ExisteAdjDoisVertices@{ExisteAdjDoisVertices}}
+\index{ExisteAdjDoisVertices@{ExisteAdjDoisVertices}!grafo.c@{grafo.c}}
+\doxysubsubsection{\texorpdfstring{ExisteAdjDoisVertices()}{ExisteAdjDoisVertices()}}
+{\footnotesize\ttfamily \label{grafo_8c_a99de201d3b32015a7efbbd0ec8e0f513} 
+bool Existe\+Adj\+Dois\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{inicio}{, }\item[{int}]{origem}{, }\item[{int}]{destino}{}\end{DoxyParamCaption})}
+
+
+
+Verifica se existe uma aresta entre dois vértices. 
+
+Esta função verifica se existe uma aresta entre dois vértices. Ela percorre todos os vértices e adjacências do grafo, procurando uma aresta entre os vértices de origem e destino.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inicio} & Apontador para o primeiro vértice do grafo. \\
+\hline
+{\em origem} & O valor do vértice de origem da aresta. \\
+\hline
+{\em destino} & O valor do vértice de destino da aresta. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Retorna true se existe uma aresta entre os vértices origem e destino, e false caso contrário. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00238\ \{}
+\DoxyCodeLine{00239\ \ \ \ \ \textcolor{keywordflow}{if}\ (inicio\ ==\ NULL\ )}
+\DoxyCodeLine{00240\ \ \ \ \ \{}
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00242\ \ \ \ \ \}}
+\DoxyCodeLine{00243\ }
+\DoxyCodeLine{00244\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{vertices_8c_a79aed65f560e86b0e73054dd2eb0a12a}{ExisteVertice}}(inicio,\ origem))}
+\DoxyCodeLine{00245\ \ \ \ \ \{}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ auxV\ =\ inicio;}
+\DoxyCodeLine{00247\ }
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (auxV)}
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structAdjacente}{Adjacente}}*\ auxA\ =\ auxV-\/>\mbox{\hyperlink{structVertice_a23c955644fa772c43b2766549bf15dae}{nextA}};}
+\DoxyCodeLine{00251\ }
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (auxA)}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Procura\ dois\ vértices\ e\ \ informa\ se\ os\ mesmos\ existem}}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (auxV-\/>\mbox{\hyperlink{structVertice_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}\ ==\ origem\ \&\&\ auxA-\/>\mbox{\hyperlink{structAdjacente_a7441ef0865bcb3db9b8064dd7375c1ea}{id}}\ ==\ destino)}
+\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (auxA-\/>\mbox{\hyperlink{structAdjacente_a42cd64244a918a5ac7790523e97d1181}{peso}}\ >\ 0)}
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00262\ }
+\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ auxA\ =\ auxA-\/>\mbox{\hyperlink{structAdjacente_a0441fada151d7e646765f5743b2d37f3}{next}};}
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00265\ }
+\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ \ \ \ \ auxV\ =\ auxV-\/>\mbox{\hyperlink{structVertice_a04a789b041a0faefae14812d9e9163d0}{nextV}};}
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00268\ }
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00270\ \ \ \ \ \}}
+\DoxyCodeLine{00271\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00272\ \ \ \ \ \{}
+\DoxyCodeLine{00273\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00274\ \ \ \ \ \}}
+\DoxyCodeLine{00275\ \}}
+
+\end{DoxyCode}
+\Hypertarget{grafo_8c_a8b8fc202071f5d2f19e13f6ab582400a}\index{grafo.c@{grafo.c}!InserirAdjGrafo@{InserirAdjGrafo}}
+\index{InserirAdjGrafo@{InserirAdjGrafo}!grafo.c@{grafo.c}}
+\doxysubsubsection{\texorpdfstring{InserirAdjGrafo()}{InserirAdjGrafo()}}
+{\footnotesize\ttfamily \label{grafo_8c_a8b8fc202071f5d2f19e13f6ab582400a} 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Inserir\+Adj\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{int}]{origem}{, }\item[{int}]{destino}{, }\item[{int}]{peso}{, }\item[{bool \texorpdfstring{$\ast$}{*}}]{inf}{}\end{DoxyParamCaption})}
+
+
+
+Insere uma nova aresta no grafo. 
+
+Esta função insere uma nova aresta no grafo. Ela verifica se os vértices de origem e destino são válidos e, em seguida, insere a aresta entre eles.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo onde a aresta será inserida. \\
+\hline
+{\em origem} & O valor do vértice de origem da aresta. \\
+\hline
+{\em destino} & O valor do vértice de destino da aresta. \\
+\hline
+{\em peso} & O peso da aresta a ser inserida. \\
+\hline
+{\em inf} & Apontador para uma variável booleana que será definida como true se a inserção for bem-\/sucedida, e false caso contrário. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o grafo com a nova aresta inserida. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00121\ \{}
+\DoxyCodeLine{00122\ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordflow}{if}\ (g\ ==\ NULL)}
+\DoxyCodeLine{00125\ \ \ \ \ \{}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00127\ \ \ \ \ \}}
+\DoxyCodeLine{00128\ \ \ \ \ }
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{comment}{//Coloca\ se\ no\ posição\ de\ origem\ }}
+\DoxyCodeLine{00130\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ origemVertice\ =\ \mbox{\hyperlink{vertices_8c_a7124c89689a5c26a3bffd300421a3d7f}{ColocaNumaPosicaoLista}}(g-\/>\mbox{\hyperlink{structGrafo_a31e63029678ada7e12934b21e59e1d5e}{inicioGrafo}},\ origem,\ \&inf);}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordflow}{if}\ (origemVertice\ ==\ NULL)}
+\DoxyCodeLine{00133\ \ \ \ \ \{}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ g;}
+\DoxyCodeLine{00136\ \ \ \ \ \}}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{comment}{//Coloca\ se\ no\ posição\ de\ destino}}
+\DoxyCodeLine{00139\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ destinoVertice\ =\ \mbox{\hyperlink{vertices_8c_a7124c89689a5c26a3bffd300421a3d7f}{ColocaNumaPosicaoLista}}(g-\/>\mbox{\hyperlink{structGrafo_a31e63029678ada7e12934b21e59e1d5e}{inicioGrafo}},\ destino,\ \&inf);}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keywordflow}{if}\ (destinoVertice\ ==\ NULL)}
+\DoxyCodeLine{00142\ \ \ \ \ \{}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ g;}
+\DoxyCodeLine{00145\ \ \ \ \ \}}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{comment}{//Insere\ uma\ adjacência}}
+\DoxyCodeLine{00148\ \ \ \ \ origemVertice-\/>\mbox{\hyperlink{structVertice_a23c955644fa772c43b2766549bf15dae}{nextA}}\ =\ \mbox{\hyperlink{adjacente_8c_ac9f85f034b15f7ab6cde59932379c910}{InserirAdjacenciaLista}}(origemVertice-\/>\mbox{\hyperlink{structVertice_a23c955644fa772c43b2766549bf15dae}{nextA}},\ destino,\ peso,\ \&inf);}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keywordflow}{return}\ g;}
+\DoxyCodeLine{00151\ \}}
+
+\end{DoxyCode}
+\Hypertarget{grafo_8c_aedadb34da858a8042cd06bbdee1eeff0}\index{grafo.c@{grafo.c}!InserirVerticeGrafo@{InserirVerticeGrafo}}
+\index{InserirVerticeGrafo@{InserirVerticeGrafo}!grafo.c@{grafo.c}}
+\doxysubsubsection{\texorpdfstring{InserirVerticeGrafo()}{InserirVerticeGrafo()}}
+{\footnotesize\ttfamily \label{grafo_8c_aedadb34da858a8042cd06bbdee1eeff0} 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Inserir\+Vertice\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{int}]{novo}{, }\item[{bool \texorpdfstring{$\ast$}{*}}]{inf}{}\end{DoxyParamCaption})}
+
+
+
+Insere um novo vértice no grafo. 
+
+Esta função insere um novo vértice no grafo. Ela verifica se o valor do novo vértice já existe e, em seguida, insere-\/o no fim da lista de vertices.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo onde o vértice será inserido. \\
+\hline
+{\em novo} & O valor do novo vértice a ser inserido. \\
+\hline
+{\em inf} & Apontador para uma variável booleana que será definida como true se a inserção for bem-\/sucedida, e false caso contrário. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o grafo com o novo vértice inserido. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00086\ \{}
+\DoxyCodeLine{00087\ \ \ \ \ *inf\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordflow}{if}\ (g\ ==\ NULL)}
+\DoxyCodeLine{00090\ \ \ \ \ \{}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00092\ \ \ \ \ \}}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00094\ \ \ \ \ \{}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Insere\ o\ novo\ vértice\ na\ lista\ de\ vertices\ do\ grafo}}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ g-\/>\mbox{\hyperlink{structGrafo_a31e63029678ada7e12934b21e59e1d5e}{inicioGrafo}}\ =\ \mbox{\hyperlink{vertices_8c_a348f05f0791acc0c9258006b51d7a5eb}{InserirVerticeLista}}(g-\/>\mbox{\hyperlink{structGrafo_a31e63029678ada7e12934b21e59e1d5e}{inicioGrafo}},\ novo,\ \&inf);}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (g-\/>\mbox{\hyperlink{structGrafo_a31e63029678ada7e12934b21e59e1d5e}{inicioGrafo}}\ !=\ NULL)}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ *inf\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00102\ \ \ \ \ \}}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordflow}{return}\ g;}
+\DoxyCodeLine{00105\ \}}
+
+\end{DoxyCode}

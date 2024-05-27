@@ -1,0 +1,10 @@
+<map id="C:/Users/hugoc/OneDrive &#45; Instituto Politécnico do Cávado e do Ave/2023_2024/Estruturas de Dados Avançadas/Dev/TrabII_ESI_EDA_Hugo_Cruz_a23010/src/Main/libs/grafo.h" name="C:/Users/hugoc/OneDrive &#45; Instituto Politécnico do Cávado e do Ave/2023_2024/Estruturas de Dados Avançadas/Dev/TrabII_ESI_EDA_Hugo_Cruz_a23010/src/Main/libs/grafo.h">
+<area shape="rect" id="Node000001" title="Ficheiro de cabeçalho para a estrutura de dados Grafo e funcionalidades." alt="" coords="132,5,361,128"/>
+<area shape="rect" id="Node000002" href="$Main_2libs_2InputOutput_8h.html" title="Este ficheiro de cabeçalho define as funções para carregar e mostrar dados a partir de ficheiros." alt="" coords="5,176,235,299"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,142,168,177,164,174,190,139"/>
+<area shape="rect" id="Node000004" href="$Main_2libs_2caminhos_8h.html" title="Este arquivo de cabeçalho define as estruturas de dados e as funções para manipular caminhos num graf..." alt="" coords="259,176,488,299"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="304,139,330,174,326,177,299,142"/>
+<area shape="rect" id="Node000003" href="$main_8c.html" title="Arquivo principal do programa." alt="" coords="111,347,383,453"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="179,309,207,345,203,348,175,313"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="318,313,290,348,286,345,314,309"/>
+</map>

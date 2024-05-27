@@ -1,0 +1,11 @@
+<map id="C:/Users/hugoc/OneDrive &#45; Instituto Politécnico do Cávado e do Ave/2023_2024/Estruturas de Dados Avançadas/Dev/TrabII_ESI_EDA_Hugo_Cruz_a23010/src/Main/libs/grafo.h" name="C:/Users/hugoc/OneDrive &#45; Instituto Politécnico do Cávado e do Ave/2023_2024/Estruturas de Dados Avançadas/Dev/TrabII_ESI_EDA_Hugo_Cruz_a23010/src/Main/libs/grafo.h">
+<area shape="rect" id="Node000001" title="Ficheiro de cabeçalho para a estrutura de dados Grafo e funcionalidades." alt="" coords="5,5,235,128"/>
+<area shape="rect" id="Node000002" href="$Main_2libs_2vertices_8h.html" title="Este ficheiro contém as definições das estruturas de dados para os vértices num grafo." alt="" coords="82,176,158,203"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,128,123,160,117,160,117,128"/>
+<area shape="rect" id="Node000003" href="$Main_2libs_2adjacente_8h.html" title="Este ficheiro contém as definições das estruturas de dados para as adjacências num grafo." alt="" coords="76,251,164,277"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,203,123,235,117,235,117,203"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="36,325,111,352"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="114,279,92,314,87,311,110,276"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="135,325,198,352"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="130,276,153,311,148,314,126,279"/>
+</map>

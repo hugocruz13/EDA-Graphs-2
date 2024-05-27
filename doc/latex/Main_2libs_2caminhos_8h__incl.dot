@@ -1,0 +1,18 @@
+digraph "C:/Users/hugoc/OneDrive - Instituto Politécnico do Cávado e do Ave/2023_2024/Estruturas de Dados Avançadas/Dev/TrabII_ESI_EDA_Hugo_Cruz_a23010/src/Main/libs/caminhos.h"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [id="Node000001",label="C:/Users/hugoc/OneDrive\l - Instituto Politécnico\l do Cávado e do Ave/2023\l_2024/Estruturas de Dados\l Avançadas/Dev/TrabII_ESI\l_EDA_Hugo_Cruz_a23010/src/Main\l/libs/caminhos.h",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Este arquivo de cabeçalho define as estruturas de dados e as funções para manipular caminhos num graf..."];
+  Node1 -> Node2 [id="edge6_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="grafo.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$Main_2libs_2grafo_8h.html",tooltip="Ficheiro de cabeçalho para a estrutura de dados Grafo e funcionalidades."];
+  Node2 -> Node3 [id="edge7_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="vertices.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$Main_2libs_2vertices_8h.html",tooltip="Este ficheiro contém as definições das estruturas de dados para os vértices num grafo."];
+  Node3 -> Node4 [id="edge8_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="adjacente.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$Main_2libs_2adjacente_8h.html",tooltip="Este ficheiro contém as definições das estruturas de dados para as adjacências num grafo."];
+  Node4 -> Node5 [id="edge9_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="stdbool.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node4 -> Node6 [id="edge10_Node000004_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="stdlib.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+}
